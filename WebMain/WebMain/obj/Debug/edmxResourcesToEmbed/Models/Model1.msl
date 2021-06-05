@@ -1,0 +1,1980 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="egvietnam_dbModelStoreContainer" CdmEntityContainer="egvietnam_dbEntities">
+    <EntitySetMapping Name="C__MigrationHistory">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.C__MigrationHistory">
+        <MappingFragment StoreEntitySet="__MigrationHistory">
+          <ScalarProperty Name="MigrationId" ColumnName="MigrationId" />
+          <ScalarProperty Name="ContextKey" ColumnName="ContextKey" />
+          <ScalarProperty Name="Model" ColumnName="Model" />
+          <ScalarProperty Name="ProductVersion" ColumnName="ProductVersion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ActivationDefines">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.ActivationDefine">
+        <MappingFragment StoreEntitySet="ActivationDefine">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="BonusPoint" ColumnName="BonusPoint" />
+          <ScalarProperty Name="ValuePoint" ColumnName="ValuePoint" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ActivationTrackings">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.ActivationTracking">
+        <MappingFragment StoreEntitySet="ActivationTracking">
+          <ScalarProperty Name="IBOId" ColumnName="IBOId" />
+          <ScalarProperty Name="ActivatedPoint" ColumnName="ActivatedPoint" />
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Addresses">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.Address">
+        <MappingFragment StoreEntitySet="Addresses">
+          <ScalarProperty Name="C_id" ColumnName="_id" />
+          <ScalarProperty Name="a_id" ColumnName="a_id" />
+          <ScalarProperty Name="blance" ColumnName="blance" />
+          <ScalarProperty Name="sent" ColumnName="sent" />
+          <ScalarProperty Name="received" ColumnName="received" />
+          <ScalarProperty Name="txs" ColumnName="txs" />
+          <ScalarProperty Name="C__v" ColumnName="__v" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ApplicationGroupRoles">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.ApplicationGroupRole">
+        <MappingFragment StoreEntitySet="ApplicationGroupRoles">
+          <ScalarProperty Name="ApplicationRoleId" ColumnName="ApplicationRoleId" />
+          <ScalarProperty Name="ApplicationGroupId" ColumnName="ApplicationGroupId" />
+          <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ApplicationGroups">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.ApplicationGroup">
+        <MappingFragment StoreEntitySet="ApplicationGroups">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ApplicationUserGroups">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.ApplicationUserGroup">
+        <MappingFragment StoreEntitySet="ApplicationUserGroups">
+          <ScalarProperty Name="ApplicationUserId" ColumnName="ApplicationUserId" />
+          <ScalarProperty Name="ApplicationGroupId" ColumnName="ApplicationGroupId" />
+          <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspNetRoles">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.AspNetRole">
+        <MappingFragment StoreEntitySet="AspNetRoles">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspNetUserClaims">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.AspNetUserClaim">
+        <MappingFragment StoreEntitySet="AspNetUserClaims">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="ClaimType" ColumnName="ClaimType" />
+          <ScalarProperty Name="ClaimValue" ColumnName="ClaimValue" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspNetUserLogins">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.AspNetUserLogin">
+        <MappingFragment StoreEntitySet="AspNetUserLogins">
+          <ScalarProperty Name="LoginProvider" ColumnName="LoginProvider" />
+          <ScalarProperty Name="ProviderKey" ColumnName="ProviderKey" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspNetUserRoles">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.AspNetUserRole">
+        <MappingFragment StoreEntitySet="AspNetUserRoles">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+          <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspNetUsers">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.AspNetUser">
+        <MappingFragment StoreEntitySet="AspNetUsers">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="EmailConfirmed" ColumnName="EmailConfirmed" />
+          <ScalarProperty Name="PasswordHash" ColumnName="PasswordHash" />
+          <ScalarProperty Name="SecurityStamp" ColumnName="SecurityStamp" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="PhoneNumberConfirmed" ColumnName="PhoneNumberConfirmed" />
+          <ScalarProperty Name="TwoFactorEnabled" ColumnName="TwoFactorEnabled" />
+          <ScalarProperty Name="LockoutEndDateUtc" ColumnName="LockoutEndDateUtc" />
+          <ScalarProperty Name="LockoutEnabled" ColumnName="LockoutEnabled" />
+          <ScalarProperty Name="AccessFailedCount" ColumnName="AccessFailedCount" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BankDonations">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.BankDonation">
+        <MappingFragment StoreEntitySet="BankDonation">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="NetId" ColumnName="NetId" />
+          <ScalarProperty Name="SendNetId" ColumnName="SendNetId" />
+          <ScalarProperty Name="Money" ColumnName="Money" />
+          <ScalarProperty Name="IdMessage" ColumnName="IdMessage" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="UserCode" ColumnName="UserCode" />
+          <ScalarProperty Name="UserPhone" ColumnName="UserPhone" />
+          <ScalarProperty Name="UserEmail" ColumnName="UserEmail" />
+          <ScalarProperty Name="BankAccountNumber" ColumnName="BankAccountNumber" />
+          <ScalarProperty Name="BankAccountHolderName" ColumnName="BankAccountHolderName" />
+          <ScalarProperty Name="BankName" ColumnName="BankName" />
+          <ScalarProperty Name="BankBranchName" ColumnName="BankBranchName" />
+          <ScalarProperty Name="TypeId" ColumnName="TypeId" />
+          <ScalarProperty Name="AdminDate" ColumnName="AdminDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BankDonationHistories">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.BankDonationHistory">
+        <MappingFragment StoreEntitySet="BankDonationHistory">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="NetId" ColumnName="NetId" />
+          <ScalarProperty Name="SendNetId" ColumnName="SendNetId" />
+          <ScalarProperty Name="Money" ColumnName="Money" />
+          <ScalarProperty Name="IdMessage" ColumnName="IdMessage" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="UserCode" ColumnName="UserCode" />
+          <ScalarProperty Name="UserPhone" ColumnName="UserPhone" />
+          <ScalarProperty Name="UserEmail" ColumnName="UserEmail" />
+          <ScalarProperty Name="BankAccountNumber" ColumnName="BankAccountNumber" />
+          <ScalarProperty Name="BankAccountHolderName" ColumnName="BankAccountHolderName" />
+          <ScalarProperty Name="BankName" ColumnName="BankName" />
+          <ScalarProperty Name="BankBranchName" ColumnName="BankBranchName" />
+          <ScalarProperty Name="TypeId" ColumnName="TypeId" />
+          <ScalarProperty Name="AdminDate" ColumnName="AdminDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BinaryPoints">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.BinaryPoint">
+        <MappingFragment StoreEntitySet="BinaryPoint">
+          <ScalarProperty Name="IBOId" ColumnName="IBOId" />
+          <ScalarProperty Name="NewLeftPoint" ColumnName="NewLeftPoint" />
+          <ScalarProperty Name="NewRightPoint" ColumnName="NewRightPoint" />
+          <ScalarProperty Name="TotalizeLeftPoint" ColumnName="TotalizeLeftPoint" />
+          <ScalarProperty Name="TotalizeRightPoint" ColumnName="TotalizeRightPoint" />
+          <ScalarProperty Name="LeftResidual" ColumnName="LeftResidual" />
+          <ScalarProperty Name="RightResidual" ColumnName="RightResidual" />
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BinaryPointTrackings">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.BinaryPointTracking">
+        <MappingFragment StoreEntitySet="BinaryPointTracking">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="IBOId" ColumnName="IBOId" />
+          <ScalarProperty Name="NewLeftPoint" ColumnName="NewLeftPoint" />
+          <ScalarProperty Name="NewRightPoint" ColumnName="NewRightPoint" />
+          <ScalarProperty Name="TotalizeLeftPoint" ColumnName="TotalizeLeftPoint" />
+          <ScalarProperty Name="TotalizeRightPoint" ColumnName="TotalizeRightPoint" />
+          <ScalarProperty Name="LeftResidual" ColumnName="LeftResidual" />
+          <ScalarProperty Name="RightResidual" ColumnName="RightResidual" />
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="UpdatedByOrderId" ColumnName="UpdatedByOrderId" />
+          <ScalarProperty Name="UpdatedTypeId" ColumnName="UpdatedTypeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BonusNews">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.BonusNew">
+        <MappingFragment StoreEntitySet="BonusNew">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="IBOId" ColumnName="IBOId" />
+          <ScalarProperty Name="BonusTypeId" ColumnName="BonusTypeId" />
+          <ScalarProperty Name="BonusPoint" ColumnName="BonusPoint" />
+          <ScalarProperty Name="BonusVolume" ColumnName="BonusVolume" />
+          <ScalarProperty Name="IsLocked" ColumnName="IsLocked" />
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="Notes" ColumnName="Notes" />
+          <ScalarProperty Name="UpdatedByUserId" ColumnName="UpdatedByUserId" />
+          <ScalarProperty Name="UpdatedByOrderId" ColumnName="UpdatedByOrderId" />
+          <ScalarProperty Name="ListUser" ColumnName="ListUser" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BonusSettings">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.BonusSetting">
+        <MappingFragment StoreEntitySet="BonusSetting">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BonusTrackings">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.BonusTracking">
+        <MappingFragment StoreEntitySet="BonusTracking">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="IBOId" ColumnName="IBOId" />
+          <ScalarProperty Name="BonusTypeId" ColumnName="BonusTypeId" />
+          <ScalarProperty Name="BonusPoint" ColumnName="BonusPoint" />
+          <ScalarProperty Name="BonusVolume" ColumnName="BonusVolume" />
+          <ScalarProperty Name="IsLocked" ColumnName="IsLocked" />
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="Notes" ColumnName="Notes" />
+          <ScalarProperty Name="UpdatedByUserId" ColumnName="UpdatedByUserId" />
+          <ScalarProperty Name="UpdatedByOrderId" ColumnName="UpdatedByOrderId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BonusTypes">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.BonusType">
+        <MappingFragment StoreEntitySet="BonusType">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Cities">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.City">
+        <MappingFragment StoreEntitySet="City">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CountryId" ColumnName="CountryId" />
+          <ScalarProperty Name="StateProvinceId" ColumnName="StateProvinceId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Style" ColumnName="Style" />
+          <ScalarProperty Name="Abbreviation" ColumnName="Abbreviation" />
+          <ScalarProperty Name="GPSAddress" ColumnName="GPSAddress" />
+          <ScalarProperty Name="Published" ColumnName="Published" />
+          <ScalarProperty Name="DisplayOrder" ColumnName="DisplayOrder" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Coinstats">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.Coinstat">
+        <MappingFragment StoreEntitySet="Coinstats">
+          <ScalarProperty Name="C_id" ColumnName="_id" />
+          <ScalarProperty Name="coin" ColumnName="coin" />
+          <ScalarProperty Name="last_price" ColumnName="last_price" />
+          <ScalarProperty Name="connections" ColumnName="connections" />
+          <ScalarProperty Name="supply" ColumnName="supply" />
+          <ScalarProperty Name="last" ColumnName="last" />
+          <ScalarProperty Name="count" ColumnName="count" />
+          <ScalarProperty Name="C__v" ColumnName="__v" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Companies">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.Company">
+        <MappingFragment StoreEntitySet="Company">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="ShortName" ColumnName="ShortName" />
+          <ScalarProperty Name="SloganTitle" ColumnName="SloganTitle" />
+          <ScalarProperty Name="HostName" ColumnName="HostName" />
+          <ScalarProperty Name="Website" ColumnName="Website" />
+          <ScalarProperty Name="LogoImage" ColumnName="LogoImage" />
+          <ScalarProperty Name="About" ColumnName="About" />
+          <ScalarProperty Name="TownId" ColumnName="TownId" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="AddressExt" ColumnName="AddressExt" />
+          <ScalarProperty Name="ZipPostalCode" ColumnName="ZipPostalCode" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="MobileNumber" ColumnName="MobileNumber" />
+          <ScalarProperty Name="FaxNumber" ColumnName="FaxNumber" />
+          <ScalarProperty Name="EmailContact" ColumnName="EmailContact" />
+          <ScalarProperty Name="BankAccount" ColumnName="BankAccount" />
+          <ScalarProperty Name="BankName" ColumnName="BankName" />
+          <ScalarProperty Name="TaxCode" ColumnName="TaxCode" />
+          <ScalarProperty Name="DisplayOrder" ColumnName="DisplayOrder" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="BaseDirectoryPath" ColumnName="BaseDirectoryPath" />
+          <ScalarProperty Name="CurrencyId" ColumnName="CurrencyId" />
+          <ScalarProperty Name="DefaultLanguageId" ColumnName="DefaultLanguageId" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+          <ScalarProperty Name="ObjectId" ColumnName="ObjectId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CompanyExts">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.CompanyExt">
+        <MappingFragment StoreEntitySet="CompanyExt">
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="LanguageId" ColumnName="LanguageId" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="ShortName" ColumnName="ShortName" />
+          <ScalarProperty Name="SloganTitle" ColumnName="SloganTitle" />
+          <ScalarProperty Name="About" ColumnName="About" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Contacts">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.Contact">
+        <MappingFragment StoreEntitySet="Contact">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="OrderCustomerName" ColumnName="OrderCustomerName" />
+          <ScalarProperty Name="OrderBillingAddress" ColumnName="OrderBillingAddress" />
+          <ScalarProperty Name="OrderCustomerPhone" ColumnName="OrderCustomerPhone" />
+          <ScalarProperty Name="OrderNote" ColumnName="OrderNote" />
+          <ScalarProperty Name="DaXem" ColumnName="DaXem" />
+          <ScalarProperty Name="OrderShippingDate" ColumnName="OrderShippingDate" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Countries">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.Country">
+        <MappingFragment StoreEntitySet="Country">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="LanguageId" ColumnName="LanguageId" />
+          <ScalarProperty Name="TwoLetterIsoCode" ColumnName="TwoLetterIsoCode" />
+          <ScalarProperty Name="ThreeLetterIsoCode" ColumnName="ThreeLetterIsoCode" />
+          <ScalarProperty Name="NumericIsoCode" ColumnName="NumericIsoCode" />
+          <ScalarProperty Name="CurrencyId" ColumnName="CurrencyId" />
+          <ScalarProperty Name="AllowsBilling" ColumnName="AllowsBilling" />
+          <ScalarProperty Name="AllowsShipping" ColumnName="AllowsShipping" />
+          <ScalarProperty Name="Published" ColumnName="Published" />
+          <ScalarProperty Name="DisplayOrder" ColumnName="DisplayOrder" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Currencies">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.Currency">
+        <MappingFragment StoreEntitySet="Currency">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="ShortCode" ColumnName="ShortCode" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Published" ColumnName="Published" />
+          <ScalarProperty Name="DisplayOrder" ColumnName="DisplayOrder" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CurrentTotalBonus">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.CurrentTotalBonu">
+        <MappingFragment StoreEntitySet="CurrentTotalBonus">
+          <ScalarProperty Name="IBOId" ColumnName="IBOId" />
+          <ScalarProperty Name="TotalSponsorBonusVolume" ColumnName="TotalSponsorBonusVolume" />
+          <ScalarProperty Name="TotalSponsorBonusPoint" ColumnName="TotalSponsorBonusPoint" />
+          <ScalarProperty Name="TotalPeriodBonusPoint" ColumnName="TotalPeriodBonusPoint" />
+          <ScalarProperty Name="TotalPeriodBonusVolume" ColumnName="TotalPeriodBonusVolume" />
+          <ScalarProperty Name="TotalSapphireBonusPoint" ColumnName="TotalSapphireBonusPoint" />
+          <ScalarProperty Name="TotalSapphireBonusVolume" ColumnName="TotalSapphireBonusVolume" />
+          <ScalarProperty Name="TotalLinearPeriodBonusPoint" ColumnName="TotalLinearPeriodBonusPoint" />
+          <ScalarProperty Name="TotalLinearPeriodBonusVolume" ColumnName="TotalLinearPeriodBonusVolume" />
+          <ScalarProperty Name="TotalLinearSalesBonusPoint" ColumnName="TotalLinearSalesBonusPoint" />
+          <ScalarProperty Name="TotalLinearSalesBonusVolume" ColumnName="TotalLinearSalesBonusVolume" />
+          <ScalarProperty Name="TotalGlobalBonusPoint" ColumnName="TotalGlobalBonusPoint" />
+          <ScalarProperty Name="TotalGlobalBonusVolume" ColumnName="TotalGlobalBonusVolume" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DirectBonusSettings">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.DirectBonusSetting">
+        <MappingFragment StoreEntitySet="DirectBonusSetting">
+          <ScalarProperty Name="SponsorStyleId" ColumnName="SponsorStyleId" />
+          <ScalarProperty Name="F1StyleId" ColumnName="F1StyleId" />
+          <ScalarProperty Name="BonusPoint" ColumnName="BonusPoint" />
+          <ScalarProperty Name="BonusVolume" ColumnName="BonusVolume" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DirectBonusTrackings">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.DirectBonusTracking">
+        <MappingFragment StoreEntitySet="DirectBonusTracking">
+          <ScalarProperty Name="IBOId" ColumnName="IBOId" />
+          <ScalarProperty Name="NewBonusPoint" ColumnName="NewBonusPoint" />
+          <ScalarProperty Name="NewBonusVolume" ColumnName="NewBonusVolume" />
+          <ScalarProperty Name="AlreadyPaidPoint" ColumnName="AlreadyPaidPoint" />
+          <ScalarProperty Name="AlreadyPaidVolume" ColumnName="AlreadyPaidVolume" />
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EmailTemplates">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.EmailTemplate">
+        <MappingFragment StoreEntitySet="EmailTemplate">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+          <ScalarProperty Name="Subject" ColumnName="Subject" />
+          <ScalarProperty Name="EmailContent" ColumnName="EmailContent" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ExportPackages">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.ExportPackage">
+        <MappingFragment StoreEntitySet="ExportPackage">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+          <ScalarProperty Name="ImportPackageId" ColumnName="ImportPackageId" />
+          <ScalarProperty Name="SalePrice" ColumnName="SalePrice" />
+          <ScalarProperty Name="TaxRate" ColumnName="TaxRate" />
+          <ScalarProperty Name="Point" ColumnName="Point" />
+          <ScalarProperty Name="StartBarCode" ColumnName="StartBarCode" />
+          <ScalarProperty Name="EndBarCode" ColumnName="EndBarCode" />
+          <ScalarProperty Name="TotalAmount" ColumnName="TotalAmount" />
+          <ScalarProperty Name="TransactionId" ColumnName="TransactionId" />
+          <ScalarProperty Name="PackageStatusId" ColumnName="PackageStatusId" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FactorExchanges">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.FactorExchange">
+        <MappingFragment StoreEntitySet="FactorExchange">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Genders">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.Gender">
+        <MappingFragment StoreEntitySet="Gender">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GolbalBonusParams">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.GolbalBonusParam">
+        <MappingFragment StoreEntitySet="GolbalBonusParam">
+          <ScalarProperty Name="IBOMedalId" ColumnName="IBOMedalId" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GroupProducts">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.GroupProduct">
+        <MappingFragment StoreEntitySet="GroupProduct">
+          <ScalarProperty Name="GroupId" ColumnName="GroupId" />
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+          <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HRs">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.HR">
+        <MappingFragment StoreEntitySet="HR">
+          <ScalarProperty Name="NetId" ColumnName="NetId" />
+          <ScalarProperty Name="FunctionId" ColumnName="FunctionId" />
+          <ScalarProperty Name="FunctionAbout" ColumnName="FunctionAbout" />
+          <ScalarProperty Name="WorkDescription" ColumnName="WorkDescription" />
+          <ScalarProperty Name="OfficeId" ColumnName="OfficeId" />
+          <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="StartWork" ColumnName="StartWork" />
+          <ScalarProperty Name="Payroll" ColumnName="Payroll" />
+          <ScalarProperty Name="Allowance" ColumnName="Allowance" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="IBOBonus">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.IBOBonu">
+        <MappingFragment StoreEntitySet="IBOBonus">
+          <ScalarProperty Name="IBOId" ColumnName="IBOId" />
+          <ScalarProperty Name="BonusTypeId" ColumnName="BonusTypeId" />
+          <ScalarProperty Name="TotalBonusPoint" ColumnName="TotalBonusPoint" />
+          <ScalarProperty Name="TotalBonusVolume" ColumnName="TotalBonusVolume" />
+          <ScalarProperty Name="DayBonusPoint" ColumnName="DayBonusPoint" />
+          <ScalarProperty Name="DayBonusVolume" ColumnName="DayBonusVolume" />
+          <ScalarProperty Name="WeekBonusPoint" ColumnName="WeekBonusPoint" />
+          <ScalarProperty Name="WeekBonusVolume" ColumnName="WeekBonusVolume" />
+          <ScalarProperty Name="MonthBonusPoint" ColumnName="MonthBonusPoint" />
+          <ScalarProperty Name="MonthBonusVolume" ColumnName="MonthBonusVolume" />
+          <ScalarProperty Name="YearBonusPoint" ColumnName="YearBonusPoint" />
+          <ScalarProperty Name="YearBonusVolume" ColumnName="YearBonusVolume" />
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="UpdatedByUserId" ColumnName="UpdatedByUserId" />
+          <ScalarProperty Name="UpdatedByOrderId" ColumnName="UpdatedByOrderId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="IBODefineds">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.IBODefined">
+        <MappingFragment StoreEntitySet="IBODefined">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CodeLength" ColumnName="CodeLength" />
+          <ScalarProperty Name="LimitedAccumulate" ColumnName="LimitedAccumulate" />
+          <ScalarProperty Name="LimitedAchievement" ColumnName="LimitedAchievement" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="IBOMedals">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.IBOMedal">
+        <MappingFragment StoreEntitySet="IBOMedal">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="BoundPoint" ColumnName="BoundPoint" />
+          <ScalarProperty Name="RequestMedalId" ColumnName="RequestMedalId" />
+          <ScalarProperty Name="RequestMedalF1Count" ColumnName="RequestMedalF1Count" />
+          <ScalarProperty Name="About" ColumnName="About" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="IBOSales">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.IBOSale">
+        <MappingFragment StoreEntitySet="IBOSale">
+          <ScalarProperty Name="IBOId" ColumnName="IBOId" />
+          <ScalarProperty Name="TotalVolume" ColumnName="TotalVolume" />
+          <ScalarProperty Name="TotalPoint" ColumnName="TotalPoint" />
+          <ScalarProperty Name="DayVolume" ColumnName="DayVolume" />
+          <ScalarProperty Name="DayPoint" ColumnName="DayPoint" />
+          <ScalarProperty Name="WeekVolume" ColumnName="WeekVolume" />
+          <ScalarProperty Name="WeekPoint" ColumnName="WeekPoint" />
+          <ScalarProperty Name="MonthVolume" ColumnName="MonthVolume" />
+          <ScalarProperty Name="MonthPoint" ColumnName="MonthPoint" />
+          <ScalarProperty Name="YearVolume" ColumnName="YearVolume" />
+          <ScalarProperty Name="YearPoint" ColumnName="YearPoint" />
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="IBOTransferLogs">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.IBOTransferLog">
+        <MappingFragment StoreEntitySet="IBOTransferLog">
+          <ScalarProperty Name="IBOId" ColumnName="IBOId" />
+          <ScalarProperty Name="OldProfileId" ColumnName="OldProfileId" />
+          <ScalarProperty Name="NewProfileId" ColumnName="NewProfileId" />
+          <ScalarProperty Name="TransferDate" ColumnName="TransferDate" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="IBOTrees">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.IBOTree">
+        <MappingFragment StoreEntitySet="IBOTree">
+          <ScalarProperty Name="IBOId" ColumnName="IBOId" />
+          <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+          <ScalarProperty Name="ChildCount" ColumnName="ChildCount" />
+          <ScalarProperty Name="LegCount" ColumnName="LegCount" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+          <ScalarProperty Name="TreeLevel" ColumnName="TreeLevel" />
+          <ScalarProperty Name="TreeTypeId" ColumnName="TreeTypeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="IBOTreeTypes">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.IBOTreeType">
+        <MappingFragment StoreEntitySet="IBOTreeType">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="HasRoot" ColumnName="HasRoot" />
+          <ScalarProperty Name="Height" ColumnName="Height" />
+          <ScalarProperty Name="Width" ColumnName="Width" />
+          <ScalarProperty Name="MaxLeg" ColumnName="MaxLeg" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="IBOUpgradeTrackings">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.IBOUpgradeTracking">
+        <MappingFragment StoreEntitySet="IBOUpgradeTracking">
+          <ScalarProperty Name="NetId" ColumnName="NetId" />
+          <ScalarProperty Name="StartedStyleId" ColumnName="StartedStyleId" />
+          <ScalarProperty Name="StartedPoint" ColumnName="StartedPoint" />
+          <ScalarProperty Name="StartedDate" ColumnName="StartedDate" />
+          <ScalarProperty Name="TargetStyleId" ColumnName="TargetStyleId" />
+          <ScalarProperty Name="TimeOutOfDay" ColumnName="TimeOutOfDay" />
+          <ScalarProperty Name="Successed" ColumnName="Successed" />
+          <ScalarProperty Name="ActionByOrderId" ColumnName="ActionByOrderId" />
+          <ScalarProperty Name="FinishedDate" ColumnName="FinishedDate" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ImportPackages">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.ImportPackage">
+        <MappingFragment StoreEntitySet="ImportPackage">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+          <ScalarProperty Name="PurchaseCost" ColumnName="PurchaseCost" />
+          <ScalarProperty Name="TaxRateId" ColumnName="TaxRateId" />
+          <ScalarProperty Name="StartBarCode" ColumnName="StartBarCode" />
+          <ScalarProperty Name="EndBarCode" ColumnName="EndBarCode" />
+          <ScalarProperty Name="TotalAmount" ColumnName="TotalAmount" />
+          <ScalarProperty Name="QuantityInStock" ColumnName="QuantityInStock" />
+          <ScalarProperty Name="ManufactureDate" ColumnName="ManufactureDate" />
+          <ScalarProperty Name="ExpireDate" ColumnName="ExpireDate" />
+          <ScalarProperty Name="TransactionId" ColumnName="TransactionId" />
+          <ScalarProperty Name="PackageStatusId" ColumnName="PackageStatusId" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Languages">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.Language">
+        <MappingFragment StoreEntitySet="Language">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="TwoCode" ColumnName="TwoCode" />
+          <ScalarProperty Name="ThreeCode" ColumnName="ThreeCode" />
+          <ScalarProperty Name="Published" ColumnName="Published" />
+          <ScalarProperty Name="DisplayOrder" ColumnName="DisplayOrder" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LimitedPeriodBonus">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.LimitedPeriodBonu">
+        <MappingFragment StoreEntitySet="LimitedPeriodBonus">
+          <ScalarProperty Name="MedalId" ColumnName="MedalId" />
+          <ScalarProperty Name="UserStyleId" ColumnName="UserStyleId" />
+          <ScalarProperty Name="BonusLimited" ColumnName="BonusLimited" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LinealBonusTrackings">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.LinealBonusTracking">
+        <MappingFragment StoreEntitySet="LinealBonusTrackings">
+          <ScalarProperty Name="IBOId" ColumnName="IBOId" />
+          <ScalarProperty Name="NormalPoint" ColumnName="NormalPoint" />
+          <ScalarProperty Name="ShapphirePoint" ColumnName="ShapphirePoint" />
+          <ScalarProperty Name="RubiPoint" ColumnName="RubiPoint" />
+          <ScalarProperty Name="EmeraldUpPoint" ColumnName="EmeraldUpPoint" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LinearBonusDefines">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.LinearBonusDefine">
+        <MappingFragment StoreEntitySet="LinearBonusDefine">
+          <ScalarProperty Name="MedalId" ColumnName="MedalId" />
+          <ScalarProperty Name="PercentBonus" ColumnName="PercentBonus" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MainWebPosts">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.MainWebPost">
+        <MappingFragment StoreEntitySet="MainWebPost">
+          <ScalarProperty Name="PostID" ColumnName="PostID" />
+          <ScalarProperty Name="PostParentID" ColumnName="PostParentID" />
+          <ScalarProperty Name="PostTitle" ColumnName="PostTitle" />
+          <ScalarProperty Name="PostLowerTitle" ColumnName="PostLowerTitle" />
+          <ScalarProperty Name="PostReadmore" ColumnName="PostReadmore" />
+          <ScalarProperty Name="PostContent" ColumnName="PostContent" />
+          <ScalarProperty Name="PostUserName" ColumnName="PostUserName" />
+          <ScalarProperty Name="PostCreateDate" ColumnName="PostCreateDate" />
+          <ScalarProperty Name="PostLastModified" ColumnName="PostLastModified" />
+          <ScalarProperty Name="PostImage" ColumnName="PostImage" />
+          <ScalarProperty Name="PostEnable" ColumnName="PostEnable" />
+          <ScalarProperty Name="PostSeoKeyword" ColumnName="PostSeoKeyword" />
+          <ScalarProperty Name="PostTypeID" ColumnName="PostTypeID" />
+          <ScalarProperty Name="PostTitleURL" ColumnName="PostTitleURL" />
+          <ScalarProperty Name="PostTitleGoogle" ColumnName="PostTitleGoogle" />
+          <ScalarProperty Name="PostTitleImage" ColumnName="PostTitleImage" />
+          <ScalarProperty Name="PostTitleAlt" ColumnName="PostTitleAlt" />
+          <ScalarProperty Name="IdLang" ColumnName="IdLang" />
+          <ScalarProperty Name="PostInTagId" ColumnName="PostInTagId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MainWebPostInTags">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.MainWebPostInTag">
+        <MappingFragment StoreEntitySet="MainWebPostInTag">
+          <ScalarProperty Name="PostInTagID" ColumnName="PostInTagID" />
+          <ScalarProperty Name="PostID" ColumnName="PostID" />
+          <ScalarProperty Name="PostTagID" ColumnName="PostTagID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MainWebPostParents">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.MainWebPostParent">
+        <MappingFragment StoreEntitySet="MainWebPostParent">
+          <ScalarProperty Name="PostParentID" ColumnName="PostParentID" />
+          <ScalarProperty Name="PostParentTitle" ColumnName="PostParentTitle" />
+          <ScalarProperty Name="PostParentLowerTitle" ColumnName="PostParentLowerTitle" />
+          <ScalarProperty Name="PostParentReadmore" ColumnName="PostParentReadmore" />
+          <ScalarProperty Name="PostParentContent" ColumnName="PostParentContent" />
+          <ScalarProperty Name="PostParentCreateDate" ColumnName="PostParentCreateDate" />
+          <ScalarProperty Name="PostParentImage" ColumnName="PostParentImage" />
+          <ScalarProperty Name="PostParentEnable" ColumnName="PostParentEnable" />
+          <ScalarProperty Name="PostParentSeoKeyword" ColumnName="PostParentSeoKeyword" />
+          <ScalarProperty Name="PostParentTitleURL" ColumnName="PostParentTitleURL" />
+          <ScalarProperty Name="PostParentTitleGoogle" ColumnName="PostParentTitleGoogle" />
+          <ScalarProperty Name="PostParentTitleImage" ColumnName="PostParentTitleImage" />
+          <ScalarProperty Name="PostParentTitleAlt" ColumnName="PostParentTitleAlt" />
+          <ScalarProperty Name="IdLang" ColumnName="IdLang" />
+          <ScalarProperty Name="PostParent2ID" ColumnName="PostParent2ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MainWebPostTags">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.MainWebPostTag">
+        <MappingFragment StoreEntitySet="MainWebPostTag">
+          <ScalarProperty Name="PostTagID" ColumnName="PostTagID" />
+          <ScalarProperty Name="PostTagTitle" ColumnName="PostTagTitle" />
+          <ScalarProperty Name="PostTagLowerTitle" ColumnName="PostTagLowerTitle" />
+          <ScalarProperty Name="PostTagReadmore" ColumnName="PostTagReadmore" />
+          <ScalarProperty Name="PostTagContent" ColumnName="PostTagContent" />
+          <ScalarProperty Name="PostTagCreateDate" ColumnName="PostTagCreateDate" />
+          <ScalarProperty Name="PostTagImage" ColumnName="PostTagImage" />
+          <ScalarProperty Name="PostTagEnable" ColumnName="PostTagEnable" />
+          <ScalarProperty Name="PostTagSeoKeyword" ColumnName="PostTagSeoKeyword" />
+          <ScalarProperty Name="PostTagTitleURL" ColumnName="PostTagTitleURL" />
+          <ScalarProperty Name="PostTagTitleGoogle" ColumnName="PostTagTitleGoogle" />
+          <ScalarProperty Name="PostTagTitleImage" ColumnName="PostTagTitleImage" />
+          <ScalarProperty Name="PostTagtTitleAlt" ColumnName="PostTagtTitleAlt" />
+          <ScalarProperty Name="IdLang" ColumnName="IdLang" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MainWebPostTypes">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.MainWebPostType">
+        <MappingFragment StoreEntitySet="MainWebPostType">
+          <ScalarProperty Name="PostTypeID" ColumnName="PostTypeID" />
+          <ScalarProperty Name="PostTypeTitle" ColumnName="PostTypeTitle" />
+          <ScalarProperty Name="PostTypeLowerTitle" ColumnName="PostTypeLowerTitle" />
+          <ScalarProperty Name="PostTypeReadmore" ColumnName="PostTypeReadmore" />
+          <ScalarProperty Name="PostTypeContent" ColumnName="PostTypeContent" />
+          <ScalarProperty Name="PostTypeCreateDate" ColumnName="PostTypeCreateDate" />
+          <ScalarProperty Name="PostTypeImage" ColumnName="PostTypeImage" />
+          <ScalarProperty Name="PostTypeEnable" ColumnName="PostTypeEnable" />
+          <ScalarProperty Name="PostTypeSeoKeyword" ColumnName="PostTypeSeoKeyword" />
+          <ScalarProperty Name="PostTypeTitleURL" ColumnName="PostTypeTitleURL" />
+          <ScalarProperty Name="PostTypeTitleGoogle" ColumnName="PostTypeTitleGoogle" />
+          <ScalarProperty Name="PostTypeTitleImage" ColumnName="PostTypeTitleImage" />
+          <ScalarProperty Name="PostTypeTitleAlt" ColumnName="PostTypeTitleAlt" />
+          <ScalarProperty Name="IdLang" ColumnName="IdLang" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Manufacturers">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.Manufacturer">
+        <MappingFragment StoreEntitySet="Manufacturer">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ShortName" ColumnName="ShortName" />
+          <ScalarProperty Name="Logo" ColumnName="Logo" />
+          <ScalarProperty Name="Picture" ColumnName="Picture" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="TownId" ColumnName="TownId" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="AddressExt" ColumnName="AddressExt" />
+          <ScalarProperty Name="ZipPostalCode" ColumnName="ZipPostalCode" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="MobileNumber" ColumnName="MobileNumber" />
+          <ScalarProperty Name="FaxNumber" ColumnName="FaxNumber" />
+          <ScalarProperty Name="BankAccount" ColumnName="BankAccount" />
+          <ScalarProperty Name="BankName" ColumnName="BankName" />
+          <ScalarProperty Name="TaxCode" ColumnName="TaxCode" />
+          <ScalarProperty Name="About" ColumnName="About" />
+          <ScalarProperty Name="DisplayOrder" ColumnName="DisplayOrder" />
+          <ScalarProperty Name="CoperativeDate" ColumnName="CoperativeDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Markets">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.Market">
+        <MappingFragment StoreEntitySet="Markets">
+          <ScalarProperty Name="C_id" ColumnName="_id" />
+          <ScalarProperty Name="market1" ColumnName="market" />
+          <ScalarProperty Name="history" ColumnName="history" />
+          <ScalarProperty Name="sells" ColumnName="sells" />
+          <ScalarProperty Name="chartdata" ColumnName="chartdata" />
+          <ScalarProperty Name="C__v" ColumnName="__v" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MeasureTypes">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.MeasureType">
+        <MappingFragment StoreEntitySet="MeasureType">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MedalTypes">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.MedalType">
+        <MappingFragment StoreEntitySet="MedalType">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="BalanceLegSale" ColumnName="BalanceLegSale" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Menus">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.Menu">
+        <MappingFragment StoreEntitySet="Menu">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="LanguageId" ColumnName="LanguageId" />
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="SpecialCode" ColumnName="SpecialCode" />
+          <ScalarProperty Name="SpecialValue" ColumnName="SpecialValue" />
+          <ScalarProperty Name="Published" ColumnName="Published" />
+          <ScalarProperty Name="Enable" ColumnName="Enable" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="ObjectId" ColumnName="ObjectId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MenuItems">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.MenuItem">
+        <MappingFragment StoreEntitySet="MenuItem">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="MenuId" ColumnName="MenuId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ActionName" ColumnName="ActionName" />
+          <ScalarProperty Name="ControllerName" ColumnName="ControllerName" />
+          <ScalarProperty Name="Url" ColumnName="Url" />
+          <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+          <ScalarProperty Name="Disable" ColumnName="Disable" />
+          <ScalarProperty Name="Published" ColumnName="Published" />
+          <ScalarProperty Name="HasAccess" ColumnName="HasAccess" />
+          <ScalarProperty Name="ObjectId" ColumnName="ObjectId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Messages">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.Message">
+        <MappingFragment StoreEntitySet="Message">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="NetId" ColumnName="NetId" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="ReMessage" ColumnName="ReMessage" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="ReNetId" ColumnName="ReNetId" />
+          <ScalarProperty Name="TitleMessage" ColumnName="TitleMessage" />
+          <ScalarProperty Name="IsViewed" ColumnName="IsViewed" />
+          <ScalarProperty Name="BDId" ColumnName="BDId" />
+          <ScalarProperty Name="TDId" ColumnName="TDId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MetaMasks">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.MetaMask">
+        <MappingFragment StoreEntitySet="MetaMask">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="walletaddress" ColumnName="walletaddress" />
+          <ScalarProperty Name="createdate" ColumnName="createdate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MoneySys">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.MoneySy">
+        <MappingFragment StoreEntitySet="MoneySys">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="CWallet" ColumnName="CWallet" />
+          <ScalarProperty Name="RWallet" ColumnName="RWallet" />
+          <ScalarProperty Name="PercentSys" ColumnName="PercentSys" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Nodes">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.Node">
+        <MappingFragment StoreEntitySet="Node">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="NodeTypeId" ColumnName="NodeTypeId" />
+          <ScalarProperty Name="Published" ColumnName="Published" />
+          <ScalarProperty Name="Locked" ColumnName="Locked" />
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NodeTypes">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.NodeType">
+        <MappingFragment StoreEntitySet="NodeType">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Offices">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.Office">
+        <MappingFragment StoreEntitySet="Office">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="SloganTitle" ColumnName="SloganTitle" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Picture" ColumnName="Picture" />
+          <ScalarProperty Name="About" ColumnName="About" />
+          <ScalarProperty Name="TownId" ColumnName="TownId" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="AddressExt" ColumnName="AddressExt" />
+          <ScalarProperty Name="ZipPostalCode" ColumnName="ZipPostalCode" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="MobileNumber" ColumnName="MobileNumber" />
+          <ScalarProperty Name="FaxNumber" ColumnName="FaxNumber" />
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="OfficeTypeId" ColumnName="OfficeTypeId" />
+          <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+          <ScalarProperty Name="LanguageId" ColumnName="LanguageId" />
+          <ScalarProperty Name="BaseDirectory" ColumnName="BaseDirectory" />
+          <ScalarProperty Name="CurrencyId" ColumnName="CurrencyId" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="DisplayOrder" ColumnName="DisplayOrder" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+          <ScalarProperty Name="ShortName" ColumnName="ShortName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OfficeExts">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.OfficeExt">
+        <MappingFragment StoreEntitySet="OfficeExt">
+          <ScalarProperty Name="OfficeId" ColumnName="OfficeId" />
+          <ScalarProperty Name="LanguageId" ColumnName="LanguageId" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="ShortName" ColumnName="ShortName" />
+          <ScalarProperty Name="SloganTitle" ColumnName="SloganTitle" />
+          <ScalarProperty Name="About" ColumnName="About" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OfficeTypes">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.OfficeType">
+        <MappingFragment StoreEntitySet="OfficeType">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrderItems">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.OrderItem">
+        <MappingFragment StoreEntitySet="OrderItem">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="PurchaseOrderId" ColumnName="PurchaseOrderId" />
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="Point" ColumnName="Point" />
+          <ScalarProperty Name="UnitPrice" ColumnName="UnitPrice" />
+          <ScalarProperty Name="TotalPrice" ColumnName="TotalPrice" />
+          <ScalarProperty Name="TotalCV" ColumnName="TotalCV" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PaidBonusTrackings">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.PaidBonusTracking">
+        <MappingFragment StoreEntitySet="PaidBonusTrackings">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="IBOId" ColumnName="IBOId" />
+          <ScalarProperty Name="PaidBonusPoint" ColumnName="PaidBonusPoint" />
+          <ScalarProperty Name="PaidBonusVolume" ColumnName="PaidBonusVolume" />
+          <ScalarProperty Name="PaidDate" ColumnName="PaidDate" />
+          <ScalarProperty Name="PaidByAdminId" ColumnName="PaidByAdminId" />
+          <ScalarProperty Name="Ip" ColumnName="Ip" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PaymentTypes">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.PaymentType">
+        <MappingFragment StoreEntitySet="PaymentType">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PINs">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.PIN">
+        <MappingFragment StoreEntitySet="PIN">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="NetId" ColumnName="NetId" />
+          <ScalarProperty Name="Pin1" ColumnName="Pin" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="wallet" ColumnName="wallet" />
+          <ScalarProperty Name="transactionHash" ColumnName="transactionHash" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PINCODEs">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.PINCODE">
+        <MappingFragment StoreEntitySet="PINCODE">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="IsUsed" ColumnName="IsUsed" />
+          <ScalarProperty Name="GroupId" ColumnName="GroupId" />
+          <ScalarProperty Name="NetId" ColumnName="NetId" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="ReNetId" ColumnName="ReNetId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PINUSERs">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.PINUSER">
+        <MappingFragment StoreEntitySet="PINUSER">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="NetId" ColumnName="NetId" />
+          <ScalarProperty Name="Pin" ColumnName="Pin" />
+          <ScalarProperty Name="GetNetId" ColumnName="GetNetId" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="transactionHash" ColumnName="transactionHash" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Products">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.Product">
+        <MappingFragment StoreEntitySet="Product">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="SKU" ColumnName="SKU" />
+          <ScalarProperty Name="ShortDescription" ColumnName="ShortDescription" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="ManufacturerId" ColumnName="ManufacturerId" />
+          <ScalarProperty Name="UnitTypeId" ColumnName="UnitTypeId" />
+          <ScalarProperty Name="TaxRateId" ColumnName="TaxRateId" />
+          <ScalarProperty Name="SalePrice" ColumnName="SalePrice" />
+          <ScalarProperty Name="RetailPrice" ColumnName="RetailPrice" />
+          <ScalarProperty Name="Point" ColumnName="Point" />
+          <ScalarProperty Name="ShowOnHomePage" ColumnName="ShowOnHomePage" />
+          <ScalarProperty Name="ShowOnSalePage" ColumnName="ShowOnSalePage" />
+          <ScalarProperty Name="WarehouseId" ColumnName="WarehouseId" />
+          <ScalarProperty Name="ProductTypeId" ColumnName="ProductTypeId" />
+          <ScalarProperty Name="IsGroup" ColumnName="IsGroup" />
+          <ScalarProperty Name="IsInGroup" ColumnName="IsInGroup" />
+          <ScalarProperty Name="OwnSale" ColumnName="OwnSale" />
+          <ScalarProperty Name="WarningStockValue" ColumnName="WarningStockValue" />
+          <ScalarProperty Name="QuantityInStock" ColumnName="QuantityInStock" />
+          <ScalarProperty Name="DisplayOrder" ColumnName="DisplayOrder" />
+          <ScalarProperty Name="Published" ColumnName="Published" />
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+          <ScalarProperty Name="ProductCategoryID" ColumnName="ProductCategoryID" />
+          <ScalarProperty Name="ProductTitleURL" ColumnName="ProductTitleURL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductAttributes">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.ProductAttribute">
+        <MappingFragment StoreEntitySet="ProductAttribute">
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+          <ScalarProperty Name="AttributeId" ColumnName="AttributeId" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductCategories">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.ProductCategory">
+        <MappingFragment StoreEntitySet="ProductCategory">
+          <ScalarProperty Name="ProductCategoryId" ColumnName="ProductCategoryId" />
+          <ScalarProperty Name="ProductCategoryName" ColumnName="ProductCategoryName" />
+          <ScalarProperty Name="ProductCategoryEnable" ColumnName="ProductCategoryEnable" />
+          <ScalarProperty Name="ProductCategoryOrder" ColumnName="ProductCategoryOrder" />
+          <ScalarProperty Name="ProductCategoryICO" ColumnName="ProductCategoryICO" />
+          <ScalarProperty Name="ProductCategoryItems" ColumnName="ProductCategoryItems" />
+          <ScalarProperty Name="ProductCategorySeoKeywords" ColumnName="ProductCategorySeoKeywords" />
+          <ScalarProperty Name="ProductCategoryDescription" ColumnName="ProductCategoryDescription" />
+          <ScalarProperty Name="ProductCategoryShowHome" ColumnName="ProductCategoryShowHome" />
+          <ScalarProperty Name="ProductParentCategoryId" ColumnName="ProductParentCategoryId" />
+          <ScalarProperty Name="ProductCategoryTitleURL" ColumnName="ProductCategoryTitleURL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductExts">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.ProductExt">
+        <MappingFragment StoreEntitySet="ProductExt">
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+          <ScalarProperty Name="LanguageId" ColumnName="LanguageId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ShortDescription" ColumnName="ShortDescription" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductImages">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.ProductImage">
+        <MappingFragment StoreEntitySet="ProductImage">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+          <ScalarProperty Name="ImageName" ColumnName="ImageName" />
+          <ScalarProperty Name="FileName" ColumnName="FileName" />
+          <ScalarProperty Name="FilePath" ColumnName="FilePath" />
+          <ScalarProperty Name="DisplayOrder" ColumnName="DisplayOrder" />
+          <ScalarProperty Name="Published" ColumnName="Published" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductTypes">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.ProductType">
+        <MappingFragment StoreEntitySet="ProductType">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PurchaseOrders">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.PurchaseOrder">
+        <MappingFragment StoreEntitySet="PurchaseOrder">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="OrderCode" ColumnName="OrderCode" />
+          <ScalarProperty Name="WarehouseId" ColumnName="WarehouseId" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="CreatedById" ColumnName="CreatedById" />
+          <ScalarProperty Name="BuyerId" ColumnName="BuyerId" />
+          <ScalarProperty Name="ApprovedById" ColumnName="ApprovedById" />
+          <ScalarProperty Name="CountProduct" ColumnName="CountProduct" />
+          <ScalarProperty Name="CountProductType" ColumnName="CountProductType" />
+          <ScalarProperty Name="TotalPoint" ColumnName="TotalPoint" />
+          <ScalarProperty Name="TotalPrice" ColumnName="TotalPrice" />
+          <ScalarProperty Name="TaxRate" ColumnName="TaxRate" />
+          <ScalarProperty Name="FinalTotalPrice" ColumnName="FinalTotalPrice" />
+          <ScalarProperty Name="PaymentTypeId" ColumnName="PaymentTypeId" />
+          <ScalarProperty Name="AlreadyPaid" ColumnName="AlreadyPaid" />
+          <ScalarProperty Name="PaidDate" ColumnName="PaidDate" />
+          <ScalarProperty Name="Notes" ColumnName="Notes" />
+          <ScalarProperty Name="ShipToCustomer" ColumnName="ShipToCustomer" />
+          <ScalarProperty Name="ShipToPhone" ColumnName="ShipToPhone" />
+          <ScalarProperty Name="ShipOnDate" ColumnName="ShipOnDate" />
+          <ScalarProperty Name="ShippingTime" ColumnName="ShippingTime" />
+          <ScalarProperty Name="ShippingExprise" ColumnName="ShippingExprise" />
+          <ScalarProperty Name="ShipToAddress" ColumnName="ShipToAddress" />
+          <ScalarProperty Name="TownId" ColumnName="TownId" />
+          <ScalarProperty Name="ZipPostalCode" ColumnName="ZipPostalCode" />
+          <ScalarProperty Name="ShippingCost" ColumnName="ShippingCost" />
+          <ScalarProperty Name="OrderStatusId" ColumnName="OrderStatusId" />
+          <ScalarProperty Name="CurrencyId" ColumnName="CurrencyId" />
+          <ScalarProperty Name="GuestEmail" ColumnName="GuestEmail" />
+          <ScalarProperty Name="GuestName" ColumnName="GuestName" />
+          <ScalarProperty Name="GuestPhone" ColumnName="GuestPhone" />
+          <ScalarProperty Name="GuestAddress" ColumnName="GuestAddress" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ResonanceDefines">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.ResonanceDefine">
+        <MappingFragment StoreEntitySet="ResonanceDefine">
+          <ScalarProperty Name="Floor" ColumnName="Floor" />
+          <ScalarProperty Name="UserStyleId" ColumnName="UserStyleId" />
+          <ScalarProperty Name="MedalId" ColumnName="MedalId" />
+          <ScalarProperty Name="RequestPoint" ColumnName="RequestPoint" />
+          <ScalarProperty Name="PercentBonus" ColumnName="PercentBonus" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ResonancePaidTrackings">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.ResonancePaidTracking">
+        <MappingFragment StoreEntitySet="ResonancePaidTracking">
+          <ScalarProperty Name="IBOId" ColumnName="IBOId" />
+          <ScalarProperty Name="NearUpSponsorId" ColumnName="NearUpSponsorId" />
+          <ScalarProperty Name="PaidBonus" ColumnName="PaidBonus" />
+          <ScalarProperty Name="PaidLevel" ColumnName="PaidLevel" />
+          <ScalarProperty Name="UpdateOn" ColumnName="UpdateOn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Richlists">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.Richlist">
+        <MappingFragment StoreEntitySet="Richlists">
+          <ScalarProperty Name="C_id" ColumnName="_id" />
+          <ScalarProperty Name="coin" ColumnName="coin" />
+          <ScalarProperty Name="balance" ColumnName="balance" />
+          <ScalarProperty Name="received" ColumnName="received" />
+          <ScalarProperty Name="C__v" ColumnName="__v" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SalesTrackings">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.SalesTracking">
+        <MappingFragment StoreEntitySet="SalesTracking">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UpdatedOrderId" ColumnName="UpdatedOrderId" />
+          <ScalarProperty Name="NetId" ColumnName="NetId" />
+          <ScalarProperty Name="TotalVolume" ColumnName="TotalVolume" />
+          <ScalarProperty Name="TotalPoint" ColumnName="TotalPoint" />
+          <ScalarProperty Name="DayVolume" ColumnName="DayVolume" />
+          <ScalarProperty Name="DayPoint" ColumnName="DayPoint" />
+          <ScalarProperty Name="WeekVolume" ColumnName="WeekVolume" />
+          <ScalarProperty Name="WeekPoint" ColumnName="WeekPoint" />
+          <ScalarProperty Name="MouthVolume" ColumnName="MouthVolume" />
+          <ScalarProperty Name="MouthPoint" ColumnName="MouthPoint" />
+          <ScalarProperty Name="YearVolume" ColumnName="YearVolume" />
+          <ScalarProperty Name="YearPoint" ColumnName="YearPoint" />
+          <ScalarProperty Name="UpdatedTypeId" ColumnName="UpdatedTypeId" />
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SaleUpdateTypes">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.SaleUpdateType">
+        <MappingFragment StoreEntitySet="SaleUpdateType">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SapphireBonus">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.SapphireBonu">
+        <MappingFragment StoreEntitySet="SapphireBonus">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UserStyleId" ColumnName="UserStyleId" />
+          <ScalarProperty Name="PeriodPoint" ColumnName="PeriodPoint" />
+          <ScalarProperty Name="BonusPoint" ColumnName="BonusPoint" />
+          <ScalarProperty Name="BonusVolume" ColumnName="BonusVolume" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SapphirePagings">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.SapphirePaging">
+        <MappingFragment StoreEntitySet="SapphirePaging">
+          <ScalarProperty Name="IBOId" ColumnName="IBOId" />
+          <ScalarProperty Name="GottenPoint" ColumnName="GottenPoint" />
+          <ScalarProperty Name="Complated" ColumnName="Complated" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SecurityMembers">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.SecurityMember">
+        <MappingFragment StoreEntitySet="SecurityMember">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="ObjectId" ColumnName="ObjectId" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ExpiredDate" ColumnName="ExpiredDate" />
+          <ScalarProperty Name="EffectiveDate" ColumnName="EffectiveDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StateProvinces">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.StateProvince">
+        <MappingFragment StoreEntitySet="StateProvince">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CountryId" ColumnName="CountryId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Style" ColumnName="Style" />
+          <ScalarProperty Name="Abbreviation" ColumnName="Abbreviation" />
+          <ScalarProperty Name="Published" ColumnName="Published" />
+          <ScalarProperty Name="DisplayOrder" ColumnName="DisplayOrder" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StatusOrders">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.StatusOrder">
+        <MappingFragment StoreEntitySet="StatusOrder">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StatusPackages">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.StatusPackage">
+        <MappingFragment StoreEntitySet="StatusPackage">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StatusTransactions">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.StatusTransaction">
+        <MappingFragment StoreEntitySet="StatusTransaction">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SystemEmails">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.SystemEmail">
+        <MappingFragment StoreEntitySet="SystemEmail">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+          <ScalarProperty Name="EmailAddress" ColumnName="EmailAddress" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="EmailHost" ColumnName="EmailHost" />
+          <ScalarProperty Name="EmailPort" ColumnName="EmailPort" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TakeDonations">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.TakeDonation">
+        <MappingFragment StoreEntitySet="TakeDonation">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="NetId" ColumnName="NetId" />
+          <ScalarProperty Name="SendNetId" ColumnName="SendNetId" />
+          <ScalarProperty Name="Money" ColumnName="Money" />
+          <ScalarProperty Name="IdMessage" ColumnName="IdMessage" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="UserCode" ColumnName="UserCode" />
+          <ScalarProperty Name="UserPhone" ColumnName="UserPhone" />
+          <ScalarProperty Name="UserEmail" ColumnName="UserEmail" />
+          <ScalarProperty Name="BankAccountNumber" ColumnName="BankAccountNumber" />
+          <ScalarProperty Name="BankAccountHolderName" ColumnName="BankAccountHolderName" />
+          <ScalarProperty Name="BankName" ColumnName="BankName" />
+          <ScalarProperty Name="BankBranchName" ColumnName="BankBranchName" />
+          <ScalarProperty Name="TypeId" ColumnName="TypeId" />
+          <ScalarProperty Name="AdminDate" ColumnName="AdminDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TakeDonationHistories">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.TakeDonationHistory">
+        <MappingFragment StoreEntitySet="TakeDonationHistory">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="NetId" ColumnName="NetId" />
+          <ScalarProperty Name="SendNetId" ColumnName="SendNetId" />
+          <ScalarProperty Name="Money" ColumnName="Money" />
+          <ScalarProperty Name="IdMessage" ColumnName="IdMessage" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="UserCode" ColumnName="UserCode" />
+          <ScalarProperty Name="UserPhone" ColumnName="UserPhone" />
+          <ScalarProperty Name="UserEmail" ColumnName="UserEmail" />
+          <ScalarProperty Name="BankAccountNumber" ColumnName="BankAccountNumber" />
+          <ScalarProperty Name="BankAccountHolderName" ColumnName="BankAccountHolderName" />
+          <ScalarProperty Name="BankName" ColumnName="BankName" />
+          <ScalarProperty Name="BankBranchName" ColumnName="BankBranchName" />
+          <ScalarProperty Name="TypeId" ColumnName="TypeId" />
+          <ScalarProperty Name="AdminDate" ColumnName="AdminDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TaskLogs">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.TaskLog">
+        <MappingFragment StoreEntitySet="TaskLog">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Data" ColumnName="Data" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="UpdateOn" ColumnName="UpdateOn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TaxRates">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.TaxRate">
+        <MappingFragment StoreEntitySet="TaxRate">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="IsPercent" ColumnName="IsPercent" />
+          <ScalarProperty Name="Discription" ColumnName="Discription" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TeamSales">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.TeamSale">
+        <MappingFragment StoreEntitySet="TeamSale">
+          <ScalarProperty Name="IBOId" ColumnName="IBOId" />
+          <ScalarProperty Name="TreeTypeId" ColumnName="TreeTypeId" />
+          <ScalarProperty Name="TotalVolume" ColumnName="TotalVolume" />
+          <ScalarProperty Name="TotalPoint" ColumnName="TotalPoint" />
+          <ScalarProperty Name="DayVolume" ColumnName="DayVolume" />
+          <ScalarProperty Name="DayPoint" ColumnName="DayPoint" />
+          <ScalarProperty Name="WeekVolume" ColumnName="WeekVolume" />
+          <ScalarProperty Name="WeekPoint" ColumnName="WeekPoint" />
+          <ScalarProperty Name="MonthVolume" ColumnName="MonthVolume" />
+          <ScalarProperty Name="MonthPoint" ColumnName="MonthPoint" />
+          <ScalarProperty Name="YearVolume" ColumnName="YearVolume" />
+          <ScalarProperty Name="YearPoint" ColumnName="YearPoint" />
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TeamSalesTrackings">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.TeamSalesTracking">
+        <MappingFragment StoreEntitySet="TeamSalesTracking">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UpdatedOrderId" ColumnName="UpdatedOrderId" />
+          <ScalarProperty Name="IBOId" ColumnName="IBOId" />
+          <ScalarProperty Name="TreeTypeId" ColumnName="TreeTypeId" />
+          <ScalarProperty Name="TotalVolume" ColumnName="TotalVolume" />
+          <ScalarProperty Name="TotalPoint" ColumnName="TotalPoint" />
+          <ScalarProperty Name="DayVolume" ColumnName="DayVolume" />
+          <ScalarProperty Name="DayPoint" ColumnName="DayPoint" />
+          <ScalarProperty Name="WeekVolume" ColumnName="WeekVolume" />
+          <ScalarProperty Name="WeekPoint" ColumnName="WeekPoint" />
+          <ScalarProperty Name="MouthVolume" ColumnName="MouthVolume" />
+          <ScalarProperty Name="MouthPoint" ColumnName="MouthPoint" />
+          <ScalarProperty Name="YearVolume" ColumnName="YearVolume" />
+          <ScalarProperty Name="YearPoint" ColumnName="YearPoint" />
+          <ScalarProperty Name="UpdatedTypeId" ColumnName="UpdatedTypeId" />
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TotalSales">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.TotalSale">
+        <MappingFragment StoreEntitySet="TotalSale">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="TotalVolume" ColumnName="TotalVolume" />
+          <ScalarProperty Name="TotalPoint" ColumnName="TotalPoint" />
+          <ScalarProperty Name="DayVolume" ColumnName="DayVolume" />
+          <ScalarProperty Name="DayPoint" ColumnName="DayPoint" />
+          <ScalarProperty Name="WeekVolume" ColumnName="WeekVolume" />
+          <ScalarProperty Name="WeekPoint" ColumnName="WeekPoint" />
+          <ScalarProperty Name="MonthVolume" ColumnName="MonthVolume" />
+          <ScalarProperty Name="MonthPoint" ColumnName="MonthPoint" />
+          <ScalarProperty Name="YearVolume" ColumnName="YearVolume" />
+          <ScalarProperty Name="YearPoint" ColumnName="YearPoint" />
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TotalSalesTrackings">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.TotalSalesTracking">
+        <MappingFragment StoreEntitySet="TotalSalesTracking">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UpdatedOrderId" ColumnName="UpdatedOrderId" />
+          <ScalarProperty Name="TotalVolume" ColumnName="TotalVolume" />
+          <ScalarProperty Name="TotalPoint" ColumnName="TotalPoint" />
+          <ScalarProperty Name="DayVolume" ColumnName="DayVolume" />
+          <ScalarProperty Name="DayPoint" ColumnName="DayPoint" />
+          <ScalarProperty Name="WeekVolume" ColumnName="WeekVolume" />
+          <ScalarProperty Name="WeekPoint" ColumnName="WeekPoint" />
+          <ScalarProperty Name="MonthVolume" ColumnName="MonthVolume" />
+          <ScalarProperty Name="MonthPoint" ColumnName="MonthPoint" />
+          <ScalarProperty Name="YearVolume" ColumnName="YearVolume" />
+          <ScalarProperty Name="YearPoint" ColumnName="YearPoint" />
+          <ScalarProperty Name="UpdatedTypeId" ColumnName="UpdatedTypeId" />
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Towns">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.Town">
+        <MappingFragment StoreEntitySet="Town">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CountryId" ColumnName="CountryId" />
+          <ScalarProperty Name="StateProvinceId" ColumnName="StateProvinceId" />
+          <ScalarProperty Name="CityId" ColumnName="CityId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Style" ColumnName="Style" />
+          <ScalarProperty Name="Abbreviation" ColumnName="Abbreviation" />
+          <ScalarProperty Name="GPSAddress" ColumnName="GPSAddress" />
+          <ScalarProperty Name="Published" ColumnName="Published" />
+          <ScalarProperty Name="DisplayOrder" ColumnName="DisplayOrder" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TransactionMaps">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.TransactionMap">
+        <MappingFragment StoreEntitySet="TransactionMap">
+          <ScalarProperty Name="StockTransactionId" ColumnName="StockTransactionId" />
+          <ScalarProperty Name="PurchaseOrderId" ColumnName="PurchaseOrderId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TransactionTypes">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.TransactionType">
+        <MappingFragment StoreEntitySet="TransactionType">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Trees">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.Tree">
+        <MappingFragment StoreEntitySet="Tree">
+          <ScalarProperty Name="NodeId" ColumnName="NodeId" />
+          <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+          <ScalarProperty Name="ChildCount" ColumnName="ChildCount" />
+          <ScalarProperty Name="LegCount" ColumnName="LegCount" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+          <ScalarProperty Name="Floor" ColumnName="Floor" />
+          <ScalarProperty Name="TreeTypeId" ColumnName="TreeTypeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TreeTypes">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.TreeType">
+        <MappingFragment StoreEntitySet="TreeType">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Count" ColumnName="Count" />
+          <ScalarProperty Name="Width" ColumnName="Width" />
+          <ScalarProperty Name="Height" ColumnName="Height" />
+          <ScalarProperty Name="MaxLeg" ColumnName="MaxLeg" />
+          <ScalarProperty Name="MaxHeight" ColumnName="MaxHeight" />
+          <ScalarProperty Name="ObjectId" ColumnName="ObjectId" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Txes">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.Tx">
+        <MappingFragment StoreEntitySet="Txes">
+          <ScalarProperty Name="C_id" ColumnName="_id" />
+          <ScalarProperty Name="txid" ColumnName="txid" />
+          <ScalarProperty Name="blockhash" ColumnName="blockhash" />
+          <ScalarProperty Name="blockindex" ColumnName="blockindex" />
+          <ScalarProperty Name="timestamp" ColumnName="timestamp" />
+          <ScalarProperty Name="total" ColumnName="total" />
+          <ScalarProperty Name="vout" ColumnName="vout" />
+          <ScalarProperty Name="vint" ColumnName="vint" />
+          <ScalarProperty Name="C__v" ColumnName="__v" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TypeBankDonations">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.TypeBankDonation">
+        <MappingFragment StoreEntitySet="TypeBankDonation">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UnitTypes">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.UnitType">
+        <MappingFragment StoreEntitySet="UnitType">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UpgradeMedalTrackings">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.UpgradeMedalTracking">
+        <MappingFragment StoreEntitySet="UpgradeMedalTracking">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="IBOId" ColumnName="IBOId" />
+          <ScalarProperty Name="MedalId" ColumnName="MedalId" />
+          <ScalarProperty Name="UpdatedById" ColumnName="UpdatedById" />
+          <ScalarProperty Name="UpdatedByOrderId" ColumnName="UpdatedByOrderId" />
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserNodes">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.UserNode">
+        <MappingFragment StoreEntitySet="UserNode">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UserCode" ColumnName="UserCode" />
+          <ScalarProperty Name="UpgradeMode" ColumnName="UpgradeMode" />
+          <ScalarProperty Name="Activated" ColumnName="Activated" />
+          <ScalarProperty Name="UserStyleId" ColumnName="UserStyleId" />
+          <ScalarProperty Name="UserMedalId" ColumnName="UserMedalId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserProfiles">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.UserProfile">
+        <MappingFragment StoreEntitySet="UserProfile">
+          <ScalarProperty Name="NetId" ColumnName="NetId" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+          <ScalarProperty Name="Picture" ColumnName="Picture" />
+          <ScalarProperty Name="BaseDir" ColumnName="BaseDir" />
+          <ScalarProperty Name="Birthday" ColumnName="Birthday" />
+          <ScalarProperty Name="CountryId" ColumnName="CountryId" />
+          <ScalarProperty Name="ProvinceId" ColumnName="ProvinceId" />
+          <ScalarProperty Name="CityId" ColumnName="CityId" />
+          <ScalarProperty Name="TownId" ColumnName="TownId" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="AddressExt" ColumnName="AddressExt" />
+          <ScalarProperty Name="ZipPostalCode" ColumnName="ZipPostalCode" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="MobileNumber" ColumnName="MobileNumber" />
+          <ScalarProperty Name="GenderId" ColumnName="GenderId" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Passport" ColumnName="Passport" />
+          <ScalarProperty Name="PassportDate" ColumnName="PassportDate" />
+          <ScalarProperty Name="PassportCreatedAt" ColumnName="PassportCreatedAt" />
+          <ScalarProperty Name="BankName" ColumnName="BankName" />
+          <ScalarProperty Name="BankAccount" ColumnName="BankAccount" />
+          <ScalarProperty Name="TaxCode" ColumnName="TaxCode" />
+          <ScalarProperty Name="RegisteredDate" ColumnName="RegisteredDate" />
+          <ScalarProperty Name="WorkAtCompanyId" ColumnName="WorkAtCompanyId" />
+          <ScalarProperty Name="WorkAtOfficeId" ColumnName="WorkAtOfficeId" />
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+          <ScalarProperty Name="InteractiveLevel" ColumnName="InteractiveLevel" />
+          <ScalarProperty Name="Locked" ColumnName="Locked" />
+          <ScalarProperty Name="IsSystemUser" ColumnName="IsSystemUser" />
+          <ScalarProperty Name="IsOfficerUser" ColumnName="IsOfficerUser" />
+          <ScalarProperty Name="IsBusinessPartner" ColumnName="IsBusinessPartner" />
+          <ScalarProperty Name="LockedDate" ColumnName="LockedDate" />
+          <ScalarProperty Name="Hidden" ColumnName="Hidden" />
+          <ScalarProperty Name="HiddenDate" ColumnName="HiddenDate" />
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+          <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
+          <ScalarProperty Name="LastIPAddress" ColumnName="LastIPAddress" />
+          <ScalarProperty Name="LastDateLogin" ColumnName="LastDateLogin" />
+          <ScalarProperty Name="Pass1" ColumnName="Pass1" />
+          <ScalarProperty Name="Note1" ColumnName="Note1" />
+          <ScalarProperty Name="Note2" ColumnName="Note2" />
+          <ScalarProperty Name="BankAccountHolderName" ColumnName="BankAccountHolderName" />
+          <ScalarProperty Name="BankbranchName" ColumnName="BankbranchName" />
+          <ScalarProperty Name="Option1" ColumnName="Option1" />
+          <ScalarProperty Name="Option2" ColumnName="Option2" />
+          <ScalarProperty Name="Option3" ColumnName="Option3" />
+          <ScalarProperty Name="Option4" ColumnName="Option4" />
+          <ScalarProperty Name="Option5" ColumnName="Option5" />
+          <ScalarProperty Name="Option6" ColumnName="Option6" />
+          <ScalarProperty Name="Option7" ColumnName="Option7" />
+          <ScalarProperty Name="Option8" ColumnName="Option8" />
+          <ScalarProperty Name="Option9" ColumnName="Option9" />
+          <ScalarProperty Name="Option10" ColumnName="Option10" />
+          <ScalarProperty Name="Option11" ColumnName="Option11" />
+          <ScalarProperty Name="Option12" ColumnName="Option12" />
+          <ScalarProperty Name="Option13" ColumnName="Option13" />
+          <ScalarProperty Name="Option14" ColumnName="Option14" />
+          <ScalarProperty Name="Option15" ColumnName="Option15" />
+          <ScalarProperty Name="Option16" ColumnName="Option16" />
+          <ScalarProperty Name="Option17" ColumnName="Option17" />
+          <ScalarProperty Name="Option18" ColumnName="Option18" />
+          <ScalarProperty Name="Option19" ColumnName="Option19" />
+          <ScalarProperty Name="Option20" ColumnName="Option20" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserStyles">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.UserStyle">
+        <MappingFragment StoreEntitySet="UserStyle">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="BoundPoint" ColumnName="BoundPoint" />
+          <ScalarProperty Name="Color" ColumnName="Color" />
+          <ScalarProperty Name="NonActivedColor" ColumnName="NonActivedColor" />
+          <ScalarProperty Name="WarningColor" ColumnName="WarningColor" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Warehouses">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.Warehouse">
+        <MappingFragment StoreEntitySet="Warehouse">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="OfficeId" ColumnName="OfficeId" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="MobileNumber" ColumnName="MobileNumber" />
+          <ScalarProperty Name="Fax" ColumnName="Fax" />
+          <ScalarProperty Name="About" ColumnName="About" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="DisplayOrder" ColumnName="DisplayOrder" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WarehouseExts">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.WarehouseExt">
+        <MappingFragment StoreEntitySet="WarehouseExt">
+          <ScalarProperty Name="WarehouseId" ColumnName="WarehouseId" />
+          <ScalarProperty Name="LanguageId" ColumnName="LanguageId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="About" ColumnName="About" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WarehouseLogs">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.WarehouseLog">
+        <MappingFragment StoreEntitySet="WarehouseLog">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+          <ScalarProperty Name="PackageId" ColumnName="PackageId" />
+          <ScalarProperty Name="QuantityInStock" ColumnName="QuantityInStock" />
+          <ScalarProperty Name="QuantityInPackage" ColumnName="QuantityInPackage" />
+          <ScalarProperty Name="LogDate" ColumnName="LogDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WebAttributes">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.WebAttribute">
+        <MappingFragment StoreEntitySet="WebAttribute">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="MeasureTypeId" ColumnName="MeasureTypeId" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WebBanners">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.WebBanner">
+        <MappingFragment StoreEntitySet="WebBanner">
+          <ScalarProperty Name="BannerID" ColumnName="BannerID" />
+          <ScalarProperty Name="BannerImage" ColumnName="BannerImage" />
+          <ScalarProperty Name="BannerTitle" ColumnName="BannerTitle" />
+          <ScalarProperty Name="BannerAlt" ColumnName="BannerAlt" />
+          <ScalarProperty Name="BannerLink" ColumnName="BannerLink" />
+          <ScalarProperty Name="BannerEnable" ColumnName="BannerEnable" />
+          <ScalarProperty Name="BannerGroupID" ColumnName="BannerGroupID" />
+          <ScalarProperty Name="BannerDescription" ColumnName="BannerDescription" />
+          <ScalarProperty Name="PostParentID" ColumnName="PostParentID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WebBannerGroups">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.WebBannerGroup">
+        <MappingFragment StoreEntitySet="WebBannerGroup">
+          <ScalarProperty Name="BannerGroupID" ColumnName="BannerGroupID" />
+          <ScalarProperty Name="BannerGroupName" ColumnName="BannerGroupName" />
+          <ScalarProperty Name="BannerGroupEnable" ColumnName="BannerGroupEnable" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WebInfoes">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.WebInfo">
+        <MappingFragment StoreEntitySet="WebInfo">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ImageLogo" ColumnName="ImageLogo" />
+          <ScalarProperty Name="TitleLogo" ColumnName="TitleLogo" />
+          <ScalarProperty Name="Slogone" ColumnName="Slogone" />
+          <ScalarProperty Name="TenCty" ColumnName="TenCty" />
+          <ScalarProperty Name="Motangan" ColumnName="Motangan" />
+          <ScalarProperty Name="ThongtinCty" ColumnName="ThongtinCty" />
+          <ScalarProperty Name="Diachi" ColumnName="Diachi" />
+          <ScalarProperty Name="DienthoaiNha" ColumnName="DienthoaiNha" />
+          <ScalarProperty Name="Hotline" ColumnName="Hotline" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Website" ColumnName="Website" />
+          <ScalarProperty Name="TitleWeb" ColumnName="TitleWeb" />
+          <ScalarProperty Name="TuKhoaChinhH1" ColumnName="TuKhoaChinhH1" />
+          <ScalarProperty Name="Seokeyword" ColumnName="Seokeyword" />
+          <ScalarProperty Name="Seodescription" ColumnName="Seodescription" />
+          <ScalarProperty Name="SeoGooglesiteverification" ColumnName="SeoGooglesiteverification" />
+          <ScalarProperty Name="SeoAuthor" ColumnName="SeoAuthor" />
+          <ScalarProperty Name="SeoRevisitafter" ColumnName="SeoRevisitafter" />
+          <ScalarProperty Name="Seorobots" ColumnName="Seorobots" />
+          <ScalarProperty Name="Seogeoregion" ColumnName="Seogeoregion" />
+          <ScalarProperty Name="Seogeoplacename" ColumnName="Seogeoplacename" />
+          <ScalarProperty Name="Seogeoposition" ColumnName="Seogeoposition" />
+          <ScalarProperty Name="SeoICBM" ColumnName="SeoICBM" />
+          <ScalarProperty Name="Seomsvalidate01" ColumnName="Seomsvalidate01" />
+          <ScalarProperty Name="Seocontentlanguage" ColumnName="Seocontentlanguage" />
+          <ScalarProperty Name="SeoCOPYRIGHT" ColumnName="SeoCOPYRIGHT" />
+          <ScalarProperty Name="Seogoogleanalytics" ColumnName="Seogoogleanalytics" />
+          <ScalarProperty Name="Fax" ColumnName="Fax" />
+          <ScalarProperty Name="Hotline2" ColumnName="Hotline2" />
+          <ScalarProperty Name="Facebook" ColumnName="Facebook" />
+          <ScalarProperty Name="Twitter" ColumnName="Twitter" />
+          <ScalarProperty Name="Googleplus" ColumnName="Googleplus" />
+          <ScalarProperty Name="Flickr" ColumnName="Flickr" />
+          <ScalarProperty Name="ZingMe" ColumnName="ZingMe" />
+          <ScalarProperty Name="LinkTukhoaseochinhH1" ColumnName="LinkTukhoaseochinhH1" />
+          <ScalarProperty Name="BaiViet1" ColumnName="BaiViet1" />
+          <ScalarProperty Name="BaiViet2" ColumnName="BaiViet2" />
+          <ScalarProperty Name="Baiviet3" ColumnName="Baiviet3" />
+          <ScalarProperty Name="BaiViet4" ColumnName="BaiViet4" />
+          <ScalarProperty Name="So1" ColumnName="So1" />
+          <ScalarProperty Name="So2" ColumnName="So2" />
+          <ScalarProperty Name="So3" ColumnName="So3" />
+          <ScalarProperty Name="So4" ColumnName="So4" />
+          <ScalarProperty Name="So5" ColumnName="So5" />
+          <ScalarProperty Name="So6" ColumnName="So6" />
+          <ScalarProperty Name="So7" ColumnName="So7" />
+          <ScalarProperty Name="So8" ColumnName="So8" />
+          <ScalarProperty Name="IdCompany" ColumnName="IdCompany" />
+          <ScalarProperty Name="IdLang" ColumnName="IdLang" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WebPosts">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.WebPost">
+        <MappingFragment StoreEntitySet="WebPost">
+          <ScalarProperty Name="PostID" ColumnName="PostID" />
+          <ScalarProperty Name="PostParentID" ColumnName="PostParentID" />
+          <ScalarProperty Name="PostTitle" ColumnName="PostTitle" />
+          <ScalarProperty Name="PostLowerTitle" ColumnName="PostLowerTitle" />
+          <ScalarProperty Name="PostReadmore" ColumnName="PostReadmore" />
+          <ScalarProperty Name="PostContent" ColumnName="PostContent" />
+          <ScalarProperty Name="PostUserName" ColumnName="PostUserName" />
+          <ScalarProperty Name="PostCreateDate" ColumnName="PostCreateDate" />
+          <ScalarProperty Name="PostLastModified" ColumnName="PostLastModified" />
+          <ScalarProperty Name="PostImage" ColumnName="PostImage" />
+          <ScalarProperty Name="PostEnable" ColumnName="PostEnable" />
+          <ScalarProperty Name="PostSeoKeyword" ColumnName="PostSeoKeyword" />
+          <ScalarProperty Name="PostTypeID" ColumnName="PostTypeID" />
+          <ScalarProperty Name="PostTitleURL" ColumnName="PostTitleURL" />
+          <ScalarProperty Name="PostTitleGoogle" ColumnName="PostTitleGoogle" />
+          <ScalarProperty Name="PostTitleImage" ColumnName="PostTitleImage" />
+          <ScalarProperty Name="PostTitleAlt" ColumnName="PostTitleAlt" />
+          <ScalarProperty Name="IdLang" ColumnName="IdLang" />
+          <ScalarProperty Name="IdCompany" ColumnName="IdCompany" />
+          <ScalarProperty Name="IdIBO" ColumnName="IdIBO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WebPostBanners">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.WebPostBanner">
+        <MappingFragment StoreEntitySet="WebPostBanner">
+          <ScalarProperty Name="BannerID" ColumnName="BannerID" />
+          <ScalarProperty Name="BannerImage" ColumnName="BannerImage" />
+          <ScalarProperty Name="BannerTitle" ColumnName="BannerTitle" />
+          <ScalarProperty Name="BannerAlt" ColumnName="BannerAlt" />
+          <ScalarProperty Name="BannerLink" ColumnName="BannerLink" />
+          <ScalarProperty Name="BannerEnable" ColumnName="BannerEnable" />
+          <ScalarProperty Name="BannerGroupID" ColumnName="BannerGroupID" />
+          <ScalarProperty Name="BannerDescription" ColumnName="BannerDescription" />
+          <ScalarProperty Name="IdLang" ColumnName="IdLang" />
+          <ScalarProperty Name="IdCompany" ColumnName="IdCompany" />
+          <ScalarProperty Name="IdIBO" ColumnName="IdIBO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WebPostBannerGroups">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.WebPostBannerGroup">
+        <MappingFragment StoreEntitySet="WebPostBannerGroup">
+          <ScalarProperty Name="BannerGroupID" ColumnName="BannerGroupID" />
+          <ScalarProperty Name="BannerGroupName" ColumnName="BannerGroupName" />
+          <ScalarProperty Name="BannerGroupEnable" ColumnName="BannerGroupEnable" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WebPostInTags">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.WebPostInTag">
+        <MappingFragment StoreEntitySet="WebPostInTag">
+          <ScalarProperty Name="PostInTagID" ColumnName="PostInTagID" />
+          <ScalarProperty Name="PostID" ColumnName="PostID" />
+          <ScalarProperty Name="PostTagID" ColumnName="PostTagID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WebPostParents">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.WebPostParent">
+        <MappingFragment StoreEntitySet="WebPostParent">
+          <ScalarProperty Name="PostParentID" ColumnName="PostParentID" />
+          <ScalarProperty Name="PostParentTitle" ColumnName="PostParentTitle" />
+          <ScalarProperty Name="PostParentLowerTitle" ColumnName="PostParentLowerTitle" />
+          <ScalarProperty Name="PostParentReadmore" ColumnName="PostParentReadmore" />
+          <ScalarProperty Name="PostParentContent" ColumnName="PostParentContent" />
+          <ScalarProperty Name="PostParentCreateDate" ColumnName="PostParentCreateDate" />
+          <ScalarProperty Name="PostParentImage" ColumnName="PostParentImage" />
+          <ScalarProperty Name="PostParentEnable" ColumnName="PostParentEnable" />
+          <ScalarProperty Name="PostParentSeoKeyword" ColumnName="PostParentSeoKeyword" />
+          <ScalarProperty Name="PostParentTitleURL" ColumnName="PostParentTitleURL" />
+          <ScalarProperty Name="PostParentTitleGoogle" ColumnName="PostParentTitleGoogle" />
+          <ScalarProperty Name="PostParentTitleImage" ColumnName="PostParentTitleImage" />
+          <ScalarProperty Name="PostParentTitleAlt" ColumnName="PostParentTitleAlt" />
+          <ScalarProperty Name="IdLang" ColumnName="IdLang" />
+          <ScalarProperty Name="IdCompany" ColumnName="IdCompany" />
+          <ScalarProperty Name="IdIBO" ColumnName="IdIBO" />
+          <ScalarProperty Name="PostParentID2" ColumnName="PostParentID2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WebPostTags">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.WebPostTag">
+        <MappingFragment StoreEntitySet="WebPostTag">
+          <ScalarProperty Name="PostTagID" ColumnName="PostTagID" />
+          <ScalarProperty Name="PostTagTitle" ColumnName="PostTagTitle" />
+          <ScalarProperty Name="PostTagLowerTitle" ColumnName="PostTagLowerTitle" />
+          <ScalarProperty Name="PostTagReadmore" ColumnName="PostTagReadmore" />
+          <ScalarProperty Name="PostTagContent" ColumnName="PostTagContent" />
+          <ScalarProperty Name="PostTagCreateDate" ColumnName="PostTagCreateDate" />
+          <ScalarProperty Name="PostTagImage" ColumnName="PostTagImage" />
+          <ScalarProperty Name="PostTagEnable" ColumnName="PostTagEnable" />
+          <ScalarProperty Name="PostTagSeoKeyword" ColumnName="PostTagSeoKeyword" />
+          <ScalarProperty Name="PostTagTitleURL" ColumnName="PostTagTitleURL" />
+          <ScalarProperty Name="PostTagTitleGoogle" ColumnName="PostTagTitleGoogle" />
+          <ScalarProperty Name="PostTagTitleImage" ColumnName="PostTagTitleImage" />
+          <ScalarProperty Name="PostTagtTitleAlt" ColumnName="PostTagtTitleAlt" />
+          <ScalarProperty Name="IdLang" ColumnName="IdLang" />
+          <ScalarProperty Name="IdCompany" ColumnName="IdCompany" />
+          <ScalarProperty Name="IdIBO" ColumnName="IdIBO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WebPostTypes">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.WebPostType">
+        <MappingFragment StoreEntitySet="WebPostType">
+          <ScalarProperty Name="PostTypeID" ColumnName="PostTypeID" />
+          <ScalarProperty Name="PostTypeTitle" ColumnName="PostTypeTitle" />
+          <ScalarProperty Name="PostTypeReadmore" ColumnName="PostTypeReadmore" />
+          <ScalarProperty Name="PostTypeImage" ColumnName="PostTypeImage" />
+          <ScalarProperty Name="PostTypeEnable" ColumnName="PostTypeEnable" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WhTransactions">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.WhTransaction">
+        <MappingFragment StoreEntitySet="WhTransaction">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="TransactionTypeId" ColumnName="TransactionTypeId" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="TransactionDate" ColumnName="TransactionDate" />
+          <ScalarProperty Name="CreatedById" ColumnName="CreatedById" />
+          <ScalarProperty Name="CreatedByName" ColumnName="CreatedByName" />
+          <ScalarProperty Name="WarehouseId" ColumnName="WarehouseId" />
+          <ScalarProperty Name="StatusId" ColumnName="StatusId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WorkFunctions">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.WorkFunction">
+        <MappingFragment StoreEntitySet="WorkFunction">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WorkStatus">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.WorkStatu">
+        <MappingFragment StoreEntitySet="WorkStatus">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WorkTrackings">
+      <EntityTypeMapping TypeName="egvietnam_dbModel.WorkTracking">
+        <MappingFragment StoreEntitySet="WorkTracking">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="HRId" ColumnName="HRId" />
+          <ScalarProperty Name="OfficeId" ColumnName="OfficeId" />
+          <ScalarProperty Name="WorkToDo" ColumnName="WorkToDo" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="TargetDate" ColumnName="TargetDate" />
+          <ScalarProperty Name="WorkStatusId" ColumnName="WorkStatusId" />
+          <ScalarProperty Name="MyComment" ColumnName="MyComment" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

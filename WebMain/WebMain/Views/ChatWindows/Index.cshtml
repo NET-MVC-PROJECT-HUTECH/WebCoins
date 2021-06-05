@@ -1,0 +1,807 @@
+﻿
+@{
+    ViewBag.Title = "IndexChatWindows";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from tokrix.netlify.app/html-dashboard/chat-windows.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 13 May 2021 02:12:12 GMT -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <!--
+        * @@Package:  Bitcoin & Cryptocurrency trading Dashboard
+        * @@Version: 1.0.0
+    -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title> Bitcoin & Cryptocurrency trading Dashboard</title>
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+
+    <link rel="shortcut icon" href="~/Content/assets/images/favicon.png" type="image/x-icon" />
+    <!-- Favicon -->
+    <link rel="apple-touch-icon-precomposed" href="~/Content/assets/images/apple-touch-icon-57-precomposed.png">
+    <!-- For iPhone -->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="~/Content/assets/images/apple-touch-icon-114-precomposed.png">
+    <!-- For iPhone 4 Retina display -->
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="~/Content/assets/images/apple-touch-icon-72-precomposed.png">
+    <!-- For iPad -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="~/Content/assets/images/apple-touch-icon-144-precomposed.png">
+    <!-- For iPad Retina display -->
+    <!-- CORE CSS FRAMEWORK - START -->
+    <link href="~/Content/assets/plugins/pace/pace-theme-flash.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="~/Content/assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/assets/plugins/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/assets/fonts/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/assets/css/animate.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/assets/plugins/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+          integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+          crossorigin="anonymous" />
+    <!-- CORE CSS FRAMEWORK - END -->
+    <!-- HEADER SCRIPTS INCLUDED ON THIS PAGE - START -->
+    <!-- HEADER SCRIPTS INCLUDED ON THIS PAGE - END -->
+    <!-- CORE CSS TEMPLATE - START -->
+    <link href="~/Content/assets/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/assets/css/responsive.css" rel="stylesheet" type="text/css" />
+    <!-- CORE CSS TEMPLATE - END -->
+
+</head>
+<!-- END HEAD -->
+<!-- BEGIN BODY -->
+
+<body class=" chat-open">
+    <!-- START TOPBAR -->
+    @{Html.RenderAction("Topbar", "Menu");}
+    <!-- END TOPBAR -->
+    <!-- START CONTAINER -->
+    <div class="page-container row-fluid container-fluid">
+
+        <!-- SIDEBAR - START -->
+
+        <div class="page-sidebar fixedscroll collapseit">
+
+            <!-- MAIN MENU - START -->
+            <div class="page-sidebar-wrapper" id="main-menu-wrapper">
+
+
+                <ul class='wraplist'>
+                    <li class='menusection'>Main</li>
+                    <li class="open">
+                        <a href="~/Dashboard/Indexdashboard">
+                            <i class="fa fa-th-large"></i>
+                            <span class="title">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="~/Trading/IndexTrading">
+                            <i class="fa fa-bullseye"></i>
+                            <span class="title">Trading View</span>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="~/ICODistributionAdmin/Index">
+                            <i class="fa fa-sitemap"></i>
+                            <span class="title">ICO Distribution Admin</span>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="~/ICODistributionUser/Index">
+                            <i class="fa fa-user"></i>
+                            <span class="title">ICO Distribution User</span>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="~/BuySell/Index">
+                            <i class="img">
+                                <img src="~/Content/data/icons/coins.png" style="width:16px" alt="">
+                            </i>
+                            <span class="title">Buy & Sell Crypto</span>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="~/PaymentGateways/Index">
+                            <i class="fa fa-credit-card"></i>
+                            <span class="title">Payment Gateways</span>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="~/Affailiate/Index">
+                            <i class="fa fa-crosshairs"></i>
+                            <span class="title">Affailiate Program</span>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="~/MyWallet/Index">
+                            <i class="img"><img src="~/Content/data/icons/wallet-o.png" style="width:16px" alt=""></i>
+                            <span class="title">My Wallet</span>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="~/Security/Index">
+
+                            <i class="fa fa-lock"></i>
+                            <span class="title">Security</span>
+                        </a>
+                    </li>
+
+                    <li class="">
+                        <a href="javascript:;">
+                            <i class="fa fa-gear"></i>
+                            <span class="title">Settings</span>
+                            <span class="arrow "></span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a class="" href="~/Settings/GenaralSettings">General Settings</a>
+                            </li>
+                            <li>
+                                <a class="" href="~/Accounts/Index">Account Confirmation</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="javascript:;">
+                            <i class="fa fa-lock"></i>
+                            <span class="title">Access Pages</span>
+                            <span class="arrow "></span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a class="" href="~/UILogin/Index">Login</a>
+                            </li>
+                            <li>
+                                <a class="" href="~/UILogin/Register">Registration</a>
+                            </li>
+                            <li>
+                                <a class="" href="~/NotFound/Index">404</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="javascript:;">
+                            <i class="fa fa-question-circle"></i>
+                            <span class="title">Support</span>
+                            <span class="arrow "></span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a class="" href="~/Faq/Index">FAQ</a>
+                            </li>
+                            <li>
+                                <a class="" href="~/HelpCenter/Index">Help center</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="open">
+                        <a href="javascript:;">
+                            <i class="fa fa-columns"></i>
+                            <span class="title">Layouts</span>
+                            <span class="arrow open"></span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a class="" href="~/DefaultLayout/Index">Default Layout</a>
+                            </li>
+                            <li>
+                                <a class="" href="~/CollapsedMenu/Index">Collapsed Menu</a>
+                            </li>
+                            <li>
+                                <a class="" href="~/ChatOpen/Index">Chat Open</a>
+                            </li>
+                            <li>
+                                <a class="" href="~/BoxedLayout/Index">Boxed Layout</a>
+                            </li>
+                            <li>
+                                <a class="" href="~/BoxedCollapsedMenu/Index">Boxed Collapsed Menu</a>
+                            </li>
+                            <li>
+                                <a class="" href="~/BoxedChatOpen/Index">Boxed Chat Open</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class='menusection'>Applications</li>
+
+                    <li class="">
+                        <a href="javascript:;">
+                            <i class="fa fa-envelope"></i>
+                            <span class="title">Mailbox</span>
+                            <span class="arrow "></span><span class="label label-accent">4</span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a class="" href="~/Inbox/Index">Inbox</a>
+                            </li>
+                            <li>
+                                <a class="" href="~/Compose/Index">Compose</a>
+                            </li>
+                            <li>
+                                <a class="" href="~/MailView/Index">View</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="javascript:;">
+                            <i class="fa fa-comments"></i>
+                            <span class="title">Chat API</span>
+                            <span class="arrow "></span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a class="" href="~/ChatAPI/Index">Chat API</a>
+                            </li>
+                            <li>
+                                <a class="" href="~/ChatWindows/Index">Chat Windows</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class='menusection'>Data Visualization</li>
+                    <li class="">
+                        <a href="javascript:;">
+                            <i class="fa fa-bar-chart"></i>
+                            <span class="title">Echarts</span>
+                            <span class="arrow "></span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a class="" href="~/LineAndEreaChart/Index">Line & Area Charts</a>
+                            </li>
+                            <li>
+                                <a class="" href="~/BarAndStackedChart/Index">Bar & Stacked Charts</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="javascript:;">
+                            <i class="fa fa-area-chart"></i>
+                            <span class="title">Morris Charts</span>
+                            <span class="arrow "></span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a class="" href="~/LineChart/Index">Line Charts</a>
+                            </li>
+                            <li>
+                                <a class="" href="~/BarAndStackedCharts/Index">Bar & Stacked Charts</a>
+                            </li>
+                            <li>
+                                <a class="" href="~/AreaCharts/Index">Area Charts</a>
+                            </li>
+                            <li>
+                                <a class="" href="~/PieCharts/Index">Pie Charts</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="javascript:;">
+                            <i class="fa fa-line-chart"></i>
+                            <span class="title">Charts JS</span>
+                            <span class="arrow "></span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a class="" href="~/LineChartsJS/Index">Line Charts</a>
+                            </li>
+                            <li>
+                                <a class="" href="~/BarChartsJS/Index">Bar Charts</a>
+                            </li>
+                            <li>
+                                <a class="" href="~/PieAndDonutChartsJs/Index">Pie & Donut</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="javascript:;">
+                            <i class="fa fa-bar-chart"></i>
+                            <span class="title">Flot Charts</span>
+                            <span class="arrow "></span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a class="" href="~/FlotChartsArea/Index">Area Charts</a>
+                            </li>
+                            <li>
+                                <a class="" href="~/FlotChartsLine/Index">Line Charts</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="javascript:;">
+                            <i class="fa fa-line-chart"></i>
+                            <span class="title">Sparkline Charts</span>
+                            <span class="arrow "></span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a class="" href="~/SparklineChartLineAndArea/Index">Line & Area Charts</a>
+                            </li>
+                            <li>
+                                <a class="" href="~/SparklineChartsBar/Index">Bar Charts</a>
+                            </li>
+                            <li>
+                                <a class="" href="~/SparklineChartComposite/Index">Composite Charts</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class='menusection'>User Interface</li>
+                    <li class="">
+                        <a href="javascript:;"> <i class="fa fa-folder-open"></i> <span class="title">Ui Elements</span> <span class="arrow "></span> </a>
+                        <ul class="sub-menu">
+
+
+                            <li class="">
+                                <a href="javascript:;"><span class="title">Timeline</span> <span class="arrow "></span> </a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a class="" href="~/CenteredTimeline/Index">Centered timeline</a>
+                                    </li>
+                                    <li>
+                                        <a class="" href="~/LeftTimeline/Index">Left Aligned timeline</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="">
+                                <a href="javascript:;"><span class="title">Pricing Tables</span> <span class="arrow "></span> </a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a class="" href="~/ExpandedTable/Index">Expanded</a>
+                                    </li>
+                                    <li>
+                                        <a class="" href="~/NarrowTable/Index">Narrow</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="">
+                                <a href="javascript:;"><span class="title">Icon Sets</span> <span class="arrow "></span> </a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a class="" href="~/IconStyles/Index">Icon Styles</a>
+                                    </li>
+                                    <li>
+                                        <a class="" href="~/FontAwesome/Index">Font Awesome</a>
+                                    </li>
+                                    <li>
+                                        <a class="" href="~/Glyphicons/Index">Glyph Icons</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:;"><span class="title">Form Elements</span> <span class="arrow "></span> </a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a class="" href="~/FieldElements/Index">Field Elements</a>
+                                    </li>
+                                    <li>
+                                        <a class="" href="~/PremadeForm/Index">Pre Made Forms</a>
+                                    </li>
+                                    <li>
+                                        <a class="" href="~/CheckedboxAndRadio/Index">Checkbox & Radio</a>
+                                    </li>
+                                    <li>
+                                        <a class="" href="~/FormGrid/Index">Form Grid</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="~/FormWizard/Index"> <span class="title">Form Wizard</span> </a>
+                            </li>
+                            <li>
+                                <a href="~/FormValidation/Index"> <span class="title">Form Validations</span> </a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="">
+                        <a href="javascript:;">
+                            <i class="fa fa-puzzle-piece"></i>
+                            <span class="title">Components</span>
+                            <span class="arrow "></span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a class="" href="~/Tabs/Index">Tabs</a>
+                            </li>
+                            <li>
+                                <a class="" href="~/Accordions/Index">Accordions</a>
+                            </li>
+                            <li>
+                                <a class="" href="~/ProgressBars/Index">Progress Bars</a>
+                            </li>
+                            <li>
+                                <a class="" href="~/Buttons/Index">Buttons</a>
+                            </li>
+                            <li>
+                                <a class="" href="~/Modals/Index">Modals</a>
+                            </li>
+                            <li>
+                                <a class="" href="~/Alerts/Index">Alerts</a>
+                            </li>
+                            <li>
+                                <a class="" href="~/Notifications/Index">Notifications</a>
+                            </li>
+                            <li>
+                                <a class="" href="~/Tooltips/Index">Tooltips</a>
+                            </li>
+                            <li>
+                                <a class="" href="~/Popovers/Index">Popovers</a>
+                            </li>
+                            <li>
+                                <a class="" href="~/NavBar/Index">Navbars</a>
+                            </li>
+                            <li>
+                                <a class="" href="~/Dropdown/Index">Dropdowns</a>
+                            </li>
+                            <li>
+                                <a class="" href="~/Breadcrumbs/Index">Breadcrumbs</a>
+                            </li>
+                            <li>
+                                <a class="" href="~/Pagination/Index">Pagination</a>
+                            </li>
+                            <li>
+                                <a class="" href="~/LabelsAndBages/Index">Labels & Badges</a>
+                            </li>
+                        </ul> <ul class="sub-menu">
+                            <li>
+                                <a class="" href="~/Tabs/Index">Tabs</a>
+                            </li>
+                            <li>
+                                <a class="" href="~/Accordions/Index">Accordions</a>
+                            </li>
+                            <li>
+                                <a class="" href="~/ProgressBars/Index">Progress Bars</a>
+                            </li>
+                            <li>
+                                <a class="" href="~/Buttons/Index">Buttons</a>
+                            </li>
+                            <li>
+                                <a class="" href="~/Modals/Index">Modals</a>
+                            </li>
+                            <li>
+                                <a class="" href="~/Alerts/Index">Alerts</a>
+                            </li>
+                            <li>
+                                <a class="" href="~/Notifications/Index">Notifications</a>
+                            </li>
+                            <li>
+                                <a class="" href="~/Tooltips/Index">Tooltips</a>
+                            </li>
+                            <li>
+                                <a class="" href="~/Popovers/Index">Popovers</a>
+                            </li>
+                            <li>
+                                <a class="" href="~/NavBar/Index">Navbars</a>
+                            </li>
+                            <li>
+                                <a class="" href="~/Dropdown/Index">Dropdowns</a>
+                            </li>
+                            <li>
+                                <a class="" href="~/Breadcrumbs/Index">Breadcrumbs</a>
+                            </li>
+                            <li>
+                                <a class="" href="~/Pagination/Index">Pagination</a>
+                            </li>
+                            <li>
+                                <a class="" href="~/LabelsAndBages/Index">Labels & Badges</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="">
+                        <a href="javascript:;">
+                            <i class="fa fa-th-large"></i>
+                            <span class="title">Appearance</span>
+                            <span class="arrow "></span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a class="" href="~/Typographys/Index">Typography</a>
+                            </li>
+                            <li>
+                                <a class="" href="~/Grids/Index">Grids</a>
+                            </li>
+                            <li>
+                                <a class="" href="~/DragPanels/Index">Draggable Panels</a>
+                            </li>
+                            <li>
+                                <a class="" href="~/GroupList/Index">Group Listing</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+
+            </div>
+            <!-- MAIN MENU - END -->
+
+        </div>
+        <!--  SIDEBAR - END -->
+        <!-- START CONTENT -->
+        <section id="main-content" class=" chat_shift  ">
+            <div class="wrapper main-wrapper row" style=''>
+
+                <div class='col-xs-12'>
+                    <div class="page-title">
+
+                        <div class="pull-left">
+                            <!-- PAGE HEADING TAG - START -->
+                            <h1 class="title">Chat API - Windows</h1>
+                            <!-- PAGE HEADING TAG - END -->
+                        </div>
+
+                        <div class="pull-right hidden-xs">
+                            <ol class="breadcrumb">
+                                <li>
+                                    <a href="~/Dashboard/Indexdashboard"><i class="fa fa-home"></i>Home</a>
+                                </li>
+                                <li>
+                                    <a href="~/ChatAPI/Index">Chat API</a>
+                                </li>
+                                <li class="active">
+                                    <strong>Chat Windows</strong>
+                                </li>
+                            </ol>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <!-- MAIN CONTENT AREA STARTS -->
+
+                <div class="col-lg-12">
+                    <section class="box ">
+                        <header class="panel_header">
+                            <h2 class="title pull-left">Section Box</h2>
+                            <div class="actions panel_actions pull-right">
+                                <a class="box_toggle fa fa-chevron-down"></a>
+                                <a class="box_setting fa fa-cog" data-toggle="modal" href="#section-settings"></a>
+                                <a class="box_close fa fa-times"></a>
+                            </div>
+                        </header>
+                        <div class="content-body">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    Your content goes here
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- MAIN CONTENT AREA ENDS -->
+            </div>
+        </section>
+        <!-- END CONTENT -->
+        <div class="page-chatapi  showit ">
+
+            <div class="search-bar">
+                <input type="text" placeholder="Search" class="form-control">
+            </div>
+
+            <div class="chat-wrapper">
+
+                <h4 class="group-head">Favourites</h4>
+                <ul class="contact-list">
+
+                    <li class="user-row active" id='chat_user_1' data-user-id='1'>
+                        <div class="user-img">
+                            <a href="#"><img src="~/Content/data/profile/avatar-1.png" alt=""></a>
+                        </div>
+                        <div class="user-info">
+                            <h4><a href="#">Joge Lucky</a></h4>
+                            <span class="status available" data-status="available"> Available</span>
+                        </div>
+                        <div class="user-status available">
+                            <i class="fa fa-circle"></i>
+                        </div>
+                    </li>
+                    <li class="user-row active" id='chat_user_2' data-user-id='2'>
+                        <div class="user-img">
+                            <a href="#"><img src="~/Content/data/profile/avatar-2.png" alt=""></a>
+                        </div>
+                        <div class="user-info">
+                            <h4><a href="#">Folisise Chosiel</a></h4>
+                            <span class="status away" data-status="away"> Away</span>
+                        </div>
+                        <div class="user-status away">
+                            <i class="fa fa-circle"></i>
+                        </div>
+                    </li>
+                    <li class="user-row " id='chat_user_3' data-user-id='3'>
+                        <div class="user-img">
+                            <a href="#"><img src="~/Content/data/profile/avatar-3.png" alt=""></a>
+                        </div>
+                        <div class="user-info">
+                            <h4><a href="#">Aron Gonzalez</a></h4>
+                            <span class="status busy" data-status="busy"> Busy</span>
+                        </div>
+                        <div class="user-status busy">
+                            <i class="fa fa-circle"></i>
+                        </div>
+                    </li>
+
+                </ul>
+
+                <h4 class="group-head">More Contacts</h4>
+                <ul class="contact-list">
+
+                    <li class="user-row active" id='chat_user_4' data-user-id='4'>
+                        <div class="user-img">
+                            <a href="#"><img src="~/Content/data/profile/avatar-4.png" alt=""></a>
+                        </div>
+                        <div class="user-info">
+                            <h4><a href="#">Chris Fox</a></h4>
+                            <span class="status offline" data-status="offline"> Offline</span>
+                        </div>
+                        <div class="user-status offline">
+                            <i class="fa fa-circle"></i>
+                        </div>
+                    </li>
+                    <li class="user-row " id='chat_user_5' data-user-id='5'>
+                        <div class="user-img">
+                            <a href="#"><img src="~/Content/data/profile/avatar-5.png" alt=""></a>
+                        </div>
+                        <div class="user-info">
+                            <h4><a href="#">Mogen Polish</a></h4>
+                            <span class="status offline" data-status="offline"> Offline</span>
+                        </div>
+                        <div class="user-status offline">
+                            <i class="fa fa-circle"></i>
+                        </div>
+                    </li>
+                    <li class="user-row " id='chat_user_6' data-user-id='6'>
+                        <div class="user-img">
+                            <a href="#"><img src="~/Content/data/profile/avatar-1.png" alt=""></a>
+                        </div>
+                        <div class="user-info">
+                            <h4><a href="#">Smith Carter</a></h4>
+                            <span class="status available" data-status="available"> Available</span>
+                        </div>
+                        <div class="user-status available">
+                            <i class="fa fa-circle"></i>
+                        </div>
+                    </li>
+                    <li class="user-row " id='chat_user_7' data-user-id='7'>
+                        <div class="user-img">
+                            <a href="#"><img src="~/Content/data/profile/avatar-2.png" alt=""></a>
+                        </div>
+                        <div class="user-info">
+                            <h4><a href="#">Amilia Gozenal</a></h4>
+                            <span class="status busy" data-status="busy"> Busy</span>
+                        </div>
+                        <div class="user-status busy">
+                            <i class="fa fa-circle"></i>
+                        </div>
+                    </li>
+                    <li class="user-row " id='chat_user_8' data-user-id='8'>
+                        <div class="user-img">
+                            <a href="#"><img src="~/Content/data/profile/avatar-3.png" alt=""></a>
+                        </div>
+                        <div class="user-info">
+                            <h4><a href="#">Tahir Jemyship</a></h4>
+                            <span class="status away" data-status="away"> Away</span>
+                        </div>
+                        <div class="user-status away">
+                            <i class="fa fa-circle"></i>
+                        </div>
+                    </li>
+                    <li class="user-row " id='chat_user_9' data-user-id='9'>
+                        <div class="user-img">
+                            <a href="#"><img src="~/Content/data/profile/avatar-4.png" alt=""></a>
+                        </div>
+                        <div class="user-info">
+                            <h4><a href="#">Johanson Wright</a></h4>
+                            <span class="status busy" data-status="busy"> Busy</span>
+                        </div>
+                        <div class="user-status busy">
+                            <i class="fa fa-circle"></i>
+                        </div>
+                    </li>
+                    <li class="user-row " id='chat_user_10' data-user-id='10'>
+                        <div class="user-img">
+                            <a href="#"><img src="~/Content/data/profile/avatar-5.png" alt=""></a>
+                        </div>
+                        <div class="user-info">
+                            <h4><a href="#">Loni Tindall</a></h4>
+                            <span class="status away" data-status="away"> Away</span>
+                        </div>
+                        <div class="user-status away">
+                            <i class="fa fa-circle"></i>
+                        </div>
+                    </li>
+                    <li class="user-row " id='chat_user_11' data-user-id='11'>
+                        <div class="user-img">
+                            <a href="#"><img src="~/Content/data/profile/avatar-1.png" alt=""></a>
+                        </div>
+                        <div class="user-info">
+                            <h4><a href="#">Natcho Herlaey</a></h4>
+                            <span class="status idle" data-status="idle"> Idle</span>
+                        </div>
+                        <div class="user-status idle">
+                            <i class="fa fa-circle"></i>
+                        </div>
+                    </li>
+                    <li class="user-row " id='chat_user_12' data-user-id='12'>
+                        <div class="user-img">
+                            <a href="#"><img src="~/Content/data/profile/avatar-2.png" alt=""></a>
+                        </div>
+                        <div class="user-info">
+                            <h4><a href="#">Shakira Swedan</a></h4>
+                            <span class="status idle" data-status="idle"> Idle</span>
+                        </div>
+                        <div class="user-status idle">
+                            <i class="fa fa-circle"></i>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="chatapi-windows  showit ">
+
+            <div class="user-window" id="user-window1" data-user-id="1">
+                <div class="controlbar"><img src="~/Content/data/profile/avatar-1.png" data-user-id="1" rel="tooltip" alt="" data-animate="animated fadeIn" data-toggle="tooltip" data-original-title="Joge Lucky" data-placement="top" data-color-class="primary"><span class="status available"><i class="fa fa-circle"></i></span><span class="name">Joge Lucky</span><span class="opts"><i class="fa fa-times closeit" data-user-id="1"></i><i class="fa fa-minus minimizeit" data-user-id="1"></i></span></div>
+                <div class="chatarea">
+                    <div class="chatmsg msg_receive"><span class="name">Joge Lucky</span><span class="text">I am really interested in buying bitcoin and other Cryptocurrency</span><span class="ts">12:34</span></div>
+                    <div class="chatmsg msg_sent"><span class="name">You</span><span class="text">Yes! Thanks for contacting me</span><span class="ts">12:34</span></div>
+                </div>
+                <div class="typearea">
+                    <input type="text" data-user-id="1" placeholder="Type &amp; Enter" class="form-control">
+                </div>
+            </div>
+            <div class="user-window" id="user-window2" data-user-id="2">
+                <div class="controlbar"><img src="~/Content/data/profile/avatar-2.png" alt="" data-user-id="2" rel="tooltip" data-animate="animated fadeIn" data-toggle="tooltip" data-original-title="Folisise Chosiel" data-placement="top" data-color-class="primary"><span class="status away"><i class="fa fa-circle"></i></span><span class="name">Folisise Chosiel</span><span class="opts"><i class="fa fa-times closeit" data-user-id="2"></i><i class="fa fa-minus minimizeit" data-user-id="2"></i></span></div>
+                <div class="chatarea">
+                    <div class="chatmsg msg_receive"><span class="name">Folisise Chosiel</span><span class="text">I am really interested in buying bitcoin and other Cryptocurrency</span><span class="ts">12:37</span></div>
+                    <div class="chatmsg msg_sent"><span class="name">You</span><span class="text">Yes! Thanks for contacting me</span><span class="ts">12:37</span></div>
+                </div>
+                <div class="typearea">
+                    <input type="text" data-user-id="2" placeholder="Type &amp; Enter" class="form-control">
+                </div>
+            </div>
+            <div class="user-window minimizeit" id="user-window4" data-user-id="4">
+                <div class="controlbar"><img src="~/Content/data/profile/avatar-4.png" alt="" data-user-id="4" rel="tooltip" data-animate="animated fadeIn" data-toggle="tooltip" data-original-title="Chris Fox" data-placement="top" data-color-class="primary"><span class="status offline"><i class="fa fa-circle"></i></span><span class="name">Chris Fox</span><span class="opts"><i class="fa fa-times closeit" data-user-id="4"></i><i class="fa fa-minus minimizeit" data-user-id="4"></i></span></div>
+                <div class="chatarea">
+                    <div class="chatmsg msg_receive"><span class="name">Chris Fox</span><span class="text">I am really interested in buying bitcoin and other Cryptocurrency</span><span class="ts">15:0</span></div>
+                    <div class="chatmsg msg_sent"><span class="name">You</span><span class="text">Yes! Thanks for contacting me</span><span class="ts">15:0</span></div>
+                </div>
+                <div class="typearea">
+                    <input type="text" data-user-id="4" placeholder="Type &amp; Enter" class="form-control">
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- END CONTAINER -->
+    <!-- LOAD FILES AT PAGE END FOR FASTER LOADING -->
+    <!-- CORE JS FRAMEWORK - START -->
+    <script src="~/Content/assets/js/jquery-1.11.2.min.js"></script>
+    <script src="~/Content/assets/js/jquery.easing.min.js"></script>
+    <script src="~/Content/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="~/Content/assets/plugins/pace/pace.min.js"></script>
+    <script src="~/Content/assets/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="~/Content/assets/plugins/viewport/viewportchecker.js"></script>
+    <script>
+        window.jQuery || document.write('<script src="~/Content/assets/js/jquery-1.11.2.min.js"><\/script>');
+    </script>
+    <!-- CORE JS FRAMEWORK - END -->
+    <!-- OTHER SCRIPTS INCLUDED ON THIS PAGE - START -->
+    <!-- OTHER SCRIPTS INCLUDED ON THIS PAGE - END -->
+    <!-- CORE TEMPLATE JS - START -->
+    <script src="~/Content/assets/js/scripts.js"></script>
+    <!-- END CORE TEMPLATE JS - END -->
+
+</body>
+
+
+<!-- Mirrored from tokrix.netlify.app/html-dashboard/chat-windows.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 13 May 2021 02:12:12 GMT -->
+</html>

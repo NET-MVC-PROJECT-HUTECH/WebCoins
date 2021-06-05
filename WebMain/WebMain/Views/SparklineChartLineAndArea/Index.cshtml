@@ -1,0 +1,387 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from tokrix.netlify.app/html-dashboard/charts-sparkline-composite.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 13 May 2021 02:12:19 GMT -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <!--
+        * @@Package:  Bitcoin & Cryptocurrency trading Dashboard
+        * @@Version: 1.0.0
+    -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title> Bitcoin & Cryptocurrency trading Dashboard</title>
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="~/Content/assets/images/favicon.png" type="image/x-icon" />
+    <!-- For iPhone -->
+    <link rel="apple-touch-icon-precomposed" href="~/Content/assets/images/apple-touch-icon-57-precomposed.png">
+    <!-- For iPhone 4 Retina display -->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="~/Content/assets/images/apple-touch-icon-114-precomposed.png">
+    <!-- For iPad -->
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="~/Content/assets/images/apple-touch-icon-72-precomposed.png">
+    <!-- For iPad Retina display -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="~/Content/assets/images/apple-touch-icon-144-precomposed.png">
+
+    <!-- CORE CSS FRAMEWORK - START -->
+    <link href="~/Content/assets/plugins/pace/pace-theme-flash.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="~/Content/assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/assets/plugins/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/assets/fonts/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/assets/css/animate.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/assets/plugins/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+          integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+          crossorigin="anonymous" />
+    <!-- CORE CSS FRAMEWORK - END -->
+    <!-- HEADER SCRIPTS INCLUDED ON THIS PAGE - START -->
+    <!-- HEADER SCRIPTS INCLUDED ON THIS PAGE - END -->
+    <!-- CORE CSS TEMPLATE - START -->
+    <link href="~/Content/assets/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/assets/css/responsive.css" rel="stylesheet" type="text/css" />
+    <!-- CORE CSS TEMPLATE - END -->
+
+</head>
+<!-- END HEAD -->
+<!-- BEGIN BODY -->
+
+<body class=" ">
+    <!-- START TOPBAR -->
+    @{Html.RenderAction("Topbar", "Menu");}
+    <!-- END TOPBAR -->
+    <!-- START CONTAINER -->
+    <div class="page-container row-fluid container-fluid">
+
+        <!-- SIDEBAR - START -->
+
+        <div class="page-sidebar fixedscroll">
+
+            <!-- MAIN MENU - START -->
+            @{Html.RenderAction("getmenu", "Menu");}
+            <!-- MAIN MENU - END -->
+
+        </div>
+        <!--  SIDEBAR - END -->
+        <!-- START CONTENT -->
+        <section id="main-content" class=" ">
+            <div class="wrapper main-wrapper row" style=''>
+
+                <div class='col-xs-12'>
+                    <div class="page-title">
+
+                        <div class="pull-left">
+                            <!-- PAGE HEADING TAG - START -->
+                            <h1 class="title">Sparkline Charts - Line & Area</h1>
+                            <!-- PAGE HEADING TAG - END -->
+                        </div>
+
+                        <div class="pull-right hidden-xs">
+                            <ol class="breadcrumb">
+                                <li>
+                                    <a href="~/Dashboard/Indexdashboard"><i class="fa fa-home"></i>Home</a>
+                                </li>
+                                <li>
+                                    <a href="~/SparklineChartLineAndArea/Index">Sparkline Charts</a>
+                                </li>
+                                <li class="active">
+                                    <strong>Line & Area Charts</strong>
+                                </li>
+                            </ol>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <!-- MAIN CONTENT AREA STARTS -->
+
+                <div class="col-xs-12 col-md-6">
+                    <section class="box ">
+                        <header class="panel_header">
+                            <h2 class="title pull-left">Line & Area</h2>
+                            <div class="actions panel_actions pull-right">
+                                <a class="box_toggle fa fa-chevron-down"></a>
+                                <a class="box_setting fa fa-cog" data-toggle="modal" href="#section-settings"></a>
+                                <a class="box_close fa fa-times"></a>
+                            </div>
+                        </header>
+                        <div class="content-body">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <span class="inlinesparkline">Loading..</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="col-xs-12 col-md-6">
+                    <section class="box ">
+                        <header class="panel_header">
+                            <h2 class="title pull-left">Line</h2>
+                            <div class="actions panel_actions pull-right">
+                                <a class="box_toggle fa fa-chevron-down"></a>
+                                <a class="box_setting fa fa-cog" data-toggle="modal" href="#section-settings"></a>
+                                <a class="box_close fa fa-times"></a>
+                            </div>
+                        </header>
+                        <div class="content-body">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <span class="inlinesparkline2">Loading..</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="col-xs-12 col-md-6">
+                    <section class="box ">
+                        <header class="panel_header">
+                            <h2 class="title pull-left">Area</h2>
+                            <div class="actions panel_actions pull-right">
+                                <a class="box_toggle fa fa-chevron-down"></a>
+                                <a class="box_setting fa fa-cog" data-toggle="modal" href="#section-settings"></a>
+                                <a class="box_close fa fa-times"></a>
+                            </div>
+                        </header>
+                        <div class="content-body">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <span class="inlinesparkline3">Loading..</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="col-xs-12 col-md-6">
+                    <section class="box ">
+                        <header class="panel_header">
+                            <h2 class="title pull-left">Normal Range</h2>
+                            <div class="actions panel_actions pull-right">
+                                <a class="box_toggle fa fa-chevron-down"></a>
+                                <a class="box_setting fa fa-cog" data-toggle="modal" href="#section-settings"></a>
+                                <a class="box_close fa fa-times"></a>
+                            </div>
+                        </header>
+                        <div class="content-body">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <span id="normalline">Loading...</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- MAIN CONTENT AREA ENDS -->
+            </div>
+        </section>
+        <!-- END CONTENT -->
+        <div class="page-chatapi hideit">
+
+            <div class="search-bar">
+                <input type="text" placeholder="Search" class="form-control">
+            </div>
+
+            <div class="chat-wrapper">
+
+                <h4 class="group-head">Favourites</h4>
+                <ul class="contact-list">
+
+                    <li class="user-row " id='chat_user_1' data-user-id='1'>
+                        <div class="user-img">
+                            <a href="#"><img src="~/Content/data/profile/avatar-1.png" alt=""></a>
+                        </div>
+                        <div class="user-info">
+                            <h4><a href="#">Joge Lucky</a></h4>
+                            <span class="status available" data-status="available"> Available</span>
+                        </div>
+                        <div class="user-status available">
+                            <i class="fa fa-circle"></i>
+                        </div>
+                    </li>
+                    <li class="user-row " id='chat_user_2' data-user-id='2'>
+                        <div class="user-img">
+                            <a href="#"><img src="~/Content/data/profile/avatar-2.png" alt=""></a>
+                        </div>
+                        <div class="user-info">
+                            <h4><a href="#">Folisise Chosiel</a></h4>
+                            <span class="status away" data-status="away"> Away</span>
+                        </div>
+                        <div class="user-status away">
+                            <i class="fa fa-circle"></i>
+                        </div>
+                    </li>
+                    <li class="user-row " id='chat_user_3' data-user-id='3'>
+                        <div class="user-img">
+                            <a href="#"><img src="~/Content/data/profile/avatar-3.png" alt=""></a>
+                        </div>
+                        <div class="user-info">
+                            <h4><a href="#">Aron Gonzalez</a></h4>
+                            <span class="status busy" data-status="busy"> Busy</span>
+                        </div>
+                        <div class="user-status busy">
+                            <i class="fa fa-circle"></i>
+                        </div>
+                    </li>
+
+                </ul>
+
+                <h4 class="group-head">More Contacts</h4>
+                <ul class="contact-list">
+
+                    <li class="user-row " id='chat_user_4' data-user-id='4'>
+                        <div class="user-img">
+                            <a href="#"><img src="~/Content/data/profile/avatar-4.png" alt=""></a>
+                        </div>
+                        <div class="user-info">
+                            <h4><a href="#">Chris Fox</a></h4>
+                            <span class="status offline" data-status="offline"> Offline</span>
+                        </div>
+                        <div class="user-status offline">
+                            <i class="fa fa-circle"></i>
+                        </div>
+                    </li>
+                    <li class="user-row " id='chat_user_5' data-user-id='5'>
+                        <div class="user-img">
+                            <a href="#"><img src="~/Content/data/profile/avatar-5.png" alt=""></a>
+                        </div>
+                        <div class="user-info">
+                            <h4><a href="#">Mogen Polish</a></h4>
+                            <span class="status offline" data-status="offline"> Offline</span>
+                        </div>
+                        <div class="user-status offline">
+                            <i class="fa fa-circle"></i>
+                        </div>
+                    </li>
+                    <li class="user-row " id='chat_user_6' data-user-id='6'>
+                        <div class="user-img">
+                            <a href="#"><img src="~/Content/data/profile/avatar-1.png" alt=""></a>
+                        </div>
+                        <div class="user-info">
+                            <h4><a href="#">Smith Carter</a></h4>
+                            <span class="status available" data-status="available"> Available</span>
+                        </div>
+                        <div class="user-status available">
+                            <i class="fa fa-circle"></i>
+                        </div>
+                    </li>
+                    <li class="user-row " id='chat_user_7' data-user-id='7'>
+                        <div class="user-img">
+                            <a href="#"><img src="~/Content/data/profile/avatar-2.png" alt=""></a>
+                        </div>
+                        <div class="user-info">
+                            <h4><a href="#">Amilia Gozenal</a></h4>
+                            <span class="status busy" data-status="busy"> Busy</span>
+                        </div>
+                        <div class="user-status busy">
+                            <i class="fa fa-circle"></i>
+                        </div>
+                    </li>
+                    <li class="user-row " id='chat_user_8' data-user-id='8'>
+                        <div class="user-img">
+                            <a href="#"><img src="~/Content/data/profile/avatar-3.png" alt=""></a>
+                        </div>
+                        <div class="user-info">
+                            <h4><a href="#">Tahir Jemyship</a></h4>
+                            <span class="status away" data-status="away"> Away</span>
+                        </div>
+                        <div class="user-status away">
+                            <i class="fa fa-circle"></i>
+                        </div>
+                    </li>
+                    <li class="user-row " id='chat_user_9' data-user-id='9'>
+                        <div class="user-img">
+                            <a href="#"><img src="~/Content/data/profile/avatar-4.png" alt=""></a>
+                        </div>
+                        <div class="user-info">
+                            <h4><a href="#">Johanson Wright</a></h4>
+                            <span class="status busy" data-status="busy"> Busy</span>
+                        </div>
+                        <div class="user-status busy">
+                            <i class="fa fa-circle"></i>
+                        </div>
+                    </li>
+                    <li class="user-row " id='chat_user_10' data-user-id='10'>
+                        <div class="user-img">
+                            <a href="#"><img src="~/Content/data/profile/avatar-5.png" alt=""></a>
+                        </div>
+                        <div class="user-info">
+                            <h4><a href="#">Loni Tindall</a></h4>
+                            <span class="status away" data-status="away"> Away</span>
+                        </div>
+                        <div class="user-status away">
+                            <i class="fa fa-circle"></i>
+                        </div>
+                    </li>
+                    <li class="user-row " id='chat_user_11' data-user-id='11'>
+                        <div class="user-img">
+                            <a href="#"><img src="~/Content/data/profile/avatar-1.png" alt=""></a>
+                        </div>
+                        <div class="user-info">
+                            <h4><a href="#">Natcho Herlaey</a></h4>
+                            <span class="status idle" data-status="idle"> Idle</span>
+                        </div>
+                        <div class="user-status idle">
+                            <i class="fa fa-circle"></i>
+                        </div>
+                    </li>
+                    <li class="user-row " id='chat_user_12' data-user-id='12'>
+                        <div class="user-img">
+                            <a href="#"><img src="~/Content/data/profile/avatar-2.png" alt=""></a>
+                        </div>
+                        <div class="user-info">
+                            <h4><a href="#">Shakira Swedan</a></h4>
+                            <span class="status idle" data-status="idle"> Idle</span>
+                        </div>
+                        <div class="user-status idle">
+                            <i class="fa fa-circle"></i>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="chatapi-windows ">
+
+        </div>
+    </div>
+    <!-- END CONTAINER -->
+    <!-- LOAD FILES AT PAGE END FOR FASTER LOADING -->
+    <!-- CORE JS FRAMEWORK - START -->
+    <script src="~/Content/assets/js/jquery-1.11.2.min.js"></script>
+    <script src="~/Content/assets/js/jquery.easing.min.js"></script>
+    <script src="~/Content/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="~/Content/assets/plugins/pace/pace.min.js"></script>
+    <script src="~/Content/assets/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="~/Content/assets/plugins/viewport/viewportchecker.js"></script>
+    <script>
+        window.jQuery || document.write('<script src="~/Content/assets/js/jquery-1.11.2.min.js"><\/script>');
+    </script>
+    <!-- CORE JS FRAMEWORK - END -->
+    <!-- OTHER SCRIPTS INCLUDED ON THIS PAGE - START -->
+
+    <script src="~/Content/assets/plugins/sparkline-chart/jquery.sparkline.min.js"></script>
+    <script src="~/Content/assets/js/chart-sparkline.js"></script>
+    <!-- OTHER SCRIPTS INCLUDED ON THIS PAGE - END -->
+    <!-- CORE TEMPLATE JS - START -->
+    <script src="~/Content/assets/js/scripts.js"></script>
+    <!-- END CORE TEMPLATE JS - END -->
+
+</body>
+
+
+<!-- Mirrored from tokrix.netlify.app/html-dashboard/charts-sparkline-composite.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 13 May 2021 02:12:19 GMT -->
+</html>

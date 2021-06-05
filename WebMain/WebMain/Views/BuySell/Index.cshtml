@@ -1,0 +1,415 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+    <!-- START CONTENT -->
+    <section id="main-content" class=" ">
+        <div class="wrapper main-wrapper row" style=''>
+
+            <div class='col-xs-12'>
+                <div class="page-title">
+
+                    <div class="pull-left">
+                        <!-- PAGE HEADING TAG - START -->
+                        <h1 class="title">Buy & Sell</h1>
+                        <!-- PAGE HEADING TAG - END -->
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <div class="col-lg-12">
+                <section class="box nobox marginBottom0">
+                    <div class="content-body">
+                        <div class="row">
+                            <div class="col-lg-4 col-sm-6 col-xs-12">
+                                <div class="r4_counter db_box">
+                                    <div class="icon-after">
+                                        <img src="~/Content/data/icons/sell-icon-lg.png" alt="">
+                                    </div>
+                                
+                                    <i class='pull-left ico-icon icon-md icon-primary mt-20'>
+                                        <img src="~/Content/data/icons/sell-icon-so.png" class="ico-icon-o" alt="">
+                                        <img src="~/Content/data/icons/sell-icon-sw.png" class="ico-icon-w" alt="">
+                                    </i>
+                                    <div class="stats" style="padding: 0 20px;border-left: 1px solid #eeebeb;">
+                                        <h3 class="mb-5">Selling</h3>
+                                        <span>Confiremed Tokens</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-sm-6 col-xs-12">
+                                <div class="r4_counter db_box">
+                                    <div class="icon-after">
+                                        <img src="~/Content/data/icons/buy-icon-lg.png" alt="">
+                                    </div>
+                                    <i class='pull-left ico-icon icon-md icon-primary mt-20'>
+                                        <img src="~/Content/data/icons/buy-icon-so.png" class="ico-icon-o" alt="">
+                                        <img src="~/Content/data/icons/buy-icon-sw.png" class="ico-icon-w" alt="">
+                                    </i>
+                                    <div class="stats" style="padding: 0 20px;border-left: 1px solid #eeebeb;">
+                                        <h3 class="mb-5">Buying</h3>
+                                        <span>Confiremed Tokens</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-sm-6 col-xs-12">
+                                <div class="r4_counter db_box">
+                                    <div class="icon-after">
+                                        <img src="~/Content/data/icons/exchange-icon-lg.png" alt="">
+                                    </div>
+                                    <i class='pull-left ico-icon icon-md icon-primary mt-20'>
+                                        <img src="~/Content/data/icons/exchange-icon-so.png" class="ico-icon-o" alt="">
+                                        <img src="~/Content/data/icons/exchange-icon-sw.png" class="ico-icon-w" alt="">
+                                    </i>
+                                    <div class="stats" style="padding: 0 20px;border-left: 1px solid #eeebeb;">
+                                        <h3 class="mb-5">Exchange</h3>
+                                        <span>Pending Tokens</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- End .row -->
+                    </div>
+                </section>
+            </div>
+
+
+
+            <div class="col-lg-6">
+                <section class="box has-border-left-3">
+                    <header class="panel_header">
+                        <h2 class="title pull-left">Buy Cryptocurrency</h2>
+                        <div class="actions panel_actions pull-right">
+                            <a class="box_toggle fa fa-chevron-down"></a>
+                            <a class="box_setting fa fa-cog" data-toggle="modal" href="#section-settings"></a>
+                            <a class="box_close fa fa-times"></a>
+                        </div>
+                    </header>
+                    <div class="content-body">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="transfer-wraper">
+                                    <div class="form-group no-mb">
+                                        <label class="form-label">Select the cryptocurrency</label>
+                                        <span class="desc">minimum value "0.001 BTC"</span>
+
+                                        <div class="input-group mb-10">
+                                            <span class="input-group-addon">$</span>
+
+                                            <div class="input-group-btn" style="width:100%">
+                                                <button type="button" class="btn btn-red dropdown-toggle" style="width:100%;text-align:left" data-toggle="dropdown" aria-expanded="true">
+                                                    <i class="cc BTC mr-5"></i>Bitcoin <span class="caret" style="position: absolute;right: 10px;top: 14px;"></span>
+                                                </button>
+
+                                                <ul class="dropdown-menu dropdown-red no-spacing" style="width:100%">
+                                                    <li><a href="#"><i class="cc ZEC-alt mr-5"></i>Zcash</a></li>
+                                                    <li><a href="#"><i class="cc DASH mr-5"></i>Dashcoin</a></li>
+                                                    <li><a href="#"><i class="cc NEO mr-5"></i>Neo</a></li>
+                                                    <li><a href="#"><i class="cc LTC mr-5"></i>Litcoin</a></li>
+                                                    <li><a href="#"><i class="cc XRP mr-5"></i>Ripple</a></li>
+                                                </ul>
+                                            </div>
+
+                                        </div>
+
+                                        <label class="form-label">Choose payment method</label>
+                                        <span class="desc">minimum value "0.001 BTC"</span>
+
+                                        <div class="input-group mb-10">
+                                            <span class="input-group-addon"><i class="fa fa-institution"></i></span>
+
+                                            <div class="input-group-btn" style="width:100%">
+                                                <button type="button" class="btn btn-red dropdown-toggle" style="width:100%;text-align:left" data-toggle="dropdown" aria-expanded="true">
+                                                    Bank of the galaxy <span class="caret" style="position: absolute;right: 10px;top: 14px;"></span>
+                                                </button>
+
+                                                <ul class="dropdown-menu dropdown-red no-spacing" style="width:100%">
+                                                    <li><a href="#">Bank of the galaxy</a></li>
+                                                    <li><a href="#">Bank of the galaxy</a></li>
+                                                    <li><a href="#">Bank of the galaxy</a></li>
+                                                </ul>
+                                            </div>
+
+                                        </div>
+
+                                        <label class="form-label">wallet address</label>
+                                        <span class="desc"></span>
+
+                                        <div class="input-group mb-10">
+                                            <span class="input-group-addon">
+                                                <span class="arrow"></span>
+                                                <img src="~/Content/data/icons/wallet-o.png" alt="icon">
+                                            </span>
+                                            <input type="text" class="form-control" placeholder="OxsD12F32xvW3deG5...">
+                                        </div>
+
+                                        <label class="form-label">Exchange operation</label>
+                                        <span class="desc">you can cancel this exchange easily</span>
+
+                                        <div class="col-lg-5 no-pl">
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" placeholder="Exchange amount" aria-describedby="basic-addon2">
+                                                <span class="input-group-addon" id="basic-addon1">USD</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <div class="exchange-img-wrapper">
+                                                <img src="~/Content/data/icons/exchange-arrows.png" class="mt-5 center-block" style="width:25px" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-5 no-pr">
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" placeholder="Equivalent amount" aria-describedby="basic-addon2">
+                                                <span class="input-group-addon" id="basic-addon2">BTC</span>
+                                            </div>
+                                        </div>
+
+                                        <button type="button" class="btn btn-primary btn-lg mt-20 has-gradient-to-right-bottom" style="width:100%">Buy Cryptocurrency</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div class="col-lg-1 hidden-md mt-15">
+                <div class="arrow-container text-center">
+                    <i class="fa fa-arrow-right mt-100 pt-30"></i>
+                    <i class="fa fa-arrow-right mt-100"></i>
+                    <i class="fa fa-arrow-right mt-100 mb-100"></i>
+                </div>
+            </div>
+
+            <div class="col-lg-5">
+                <div class="col-xs-12 mt-20">
+                    <h4 class="mb text-center bold">YOU ARE BUYING THE FOLLOWING</h4>
+                </div>
+                <div class="clearfix"></div>
+                <section class="box has-border-left-3">
+                    <div class="content-body">
+                        <div class="row">
+                            <div class="col-xs-12 mt-20 mb-30">
+                                <h2 class="mb text-center bold"> 5.6307173 BTC</h2>
+                                <small class="text-center f-s-14" style="display:block;font-weight:600">@@12,347 per BTC</small>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="deal-wrapper">
+                                <ul class="dropdown-menu-list list-unstyled no-mb">
+                                    <li>
+                                        <div class="notice-icon">
+                                            <i class="fa fa-institution"></i>
+                                        </div>
+                                        <div>
+                                            <span class="name">
+                                                <strong>BANK OF THE GALAXY</strong>
+                                                <span class="time small">Payment method</span>
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="notice-icon">
+                                            <i class="fa fa-credit-card"></i>
+                                        </div>
+                                        <div>
+                                            <span class="name">
+                                                <strong>BANK OF THE GALAXY</strong>
+                                                <span class="time small">Payment method</span>
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="notice-icon">
+                                            <i class="fa fa-check"></i>
+                                        </div>
+                                        <div>
+                                            <span class="name">
+                                                <strong>BANK OF THE GALAXY</strong>
+                                                <span class="time small">Payment method</span>
+                                            </span>
+                                        </div>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <div class="col-lg-6">
+                <section class="box has-border-left-3">
+                    <header class="panel_header">
+                        <h2 class="title pull-left">Sell Cryptocurrency</h2>
+                        <div class="actions panel_actions pull-right">
+                            <a class="box_toggle fa fa-chevron-down"></a>
+                            <a class="box_setting fa fa-cog" data-toggle="modal" href="#section-settings"></a>
+                            <a class="box_close fa fa-times"></a>
+                        </div>
+                    </header>
+                    <div class="content-body">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="transfer-wraper">
+                                    <div class="form-group no-mb">
+                                        <label class="form-label">Select crypto balance</label>
+                                        <span class="desc">minimum value "0.001 BTC"</span>
+
+                                        <div class="input-group mb-10">
+                                            <span class="input-group-addon">$</span>
+
+                                            <div class="input-group-btn" style="width:100%">
+                                                <button type="button" class="btn btn-red dropdown-toggle" style="width:100%;text-align:left" data-toggle="dropdown" aria-expanded="true">
+                                                    <i class="cc BTC mr-5"></i>Bitcoin <span class="caret" style="position: absolute;right: 10px;top: 14px;"></span>
+                                                </button>
+
+                                                <ul class="dropdown-menu dropdown-red no-spacing" style="width:100%">
+                                                    <li><a href="#"><i class="cc ZEC-alt mr-5"></i>Zcash</a></li>
+                                                    <li><a href="#"><i class="cc DASH mr-5"></i>Dashcoin</a></li>
+                                                    <li><a href="#"><i class="cc NEO mr-5"></i>Neo</a></li>
+                                                    <li><a href="#"><i class="cc LTC mr-5"></i>Litcoin</a></li>
+                                                    <li><a href="#"><i class="cc XRP mr-5"></i>Ripple</a></li>
+                                                </ul>
+                                            </div>
+
+                                        </div>
+
+                                        <label class="form-label">crypto amount</label>
+                                        <span class="desc">Amonut to be sold</span>
+
+                                        <div class="input-group mb-10">
+                                            <span class="input-group-addon">
+                                                <span class="arrow"></span>
+                                                <img src="~/Content/data/icons/wallet-o.png" alt="icon">
+                                            </span>
+                                            <input type="text" class="form-control" placeholder="min amount 0.001 BTC">
+                                        </div>
+
+                                        <label class="form-label">Account password</label>
+                                        <span class="desc">enter password to complete transaction</span>
+
+                                        <div class="input-group mb-10">
+                                            <span class="input-group-addon">
+                                                <i class="fa fa-lock"></i>
+                                            </span>
+                                            <input type="text" class="form-control" placeholder="enter account password">
+                                        </div>
+
+                                        <label class="form-label">Exchange operation</label>
+                                        <span class="desc">you can cancel this exchange easily</span>
+
+                                        <div class="col-lg-5 no-pl">
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" placeholder="Exchange amount" aria-describedby="basic-addon2">
+                                                <span class="input-group-addon" id="basic-addon3">USD</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <div class="exchange-img-wrapper">
+                                                <img src="~/Content/data/icons/exchange-arrows.png" class="mt-5 center-block" style="width:25px" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-5 no-pr">
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" placeholder="Equivalent amount" aria-describedby="basic-addon2">
+                                                <span class="input-group-addon" id="basic-addon4">BTC</span>
+                                            </div>
+                                        </div>
+
+                                        <button type="button" class="btn btn-primary btn-lg mt-20 has-gradient-to-right-bottom" style="width:100%">Place selling order</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div class="col-lg-6">
+                <section class="box has-border-left-3">
+                    <header class="panel_header">
+                        <h2 class="title pull-left">Recent Buying & selling Orders</h2>
+                        <div class="actions panel_actions pull-right">
+                            <a class="box_toggle fa fa-chevron-down"></a>
+                            <a class="box_setting fa fa-cog" data-toggle="modal" href="#section-settings"></a>
+                            <a class="box_close fa fa-times"></a>
+                        </div>
+                    </header>
+                    <div class="content-body">
+                        <div class="row">
+                            <div class="col-xs-12">
+
+                                <div class="table-responsive" data-pattern="priority-columns">
+                                    <table id="tech-companies-1" class="table table-small-font mb-10 table-bordered table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>Deal ID Number</th>
+                                                <th data-priority="1">Trade Time</th>
+                                                <th data-priority="3">Status</th>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th><i class="fa fa-dot-circle-o complete"></i> Deal number 126515</th>
+                                                <td>17.24AM</td>
+                                                <td><span class="status-complete">complete</span></td>
+                                            </tr>
+                                            <tr>
+                                                <th><i class="fa fa-dot-circle-o pending"></i> Deal number 123675</th>
+                                                <td>18.14AM</td>
+                                                <td><span class="status-pending">pending</span></td>
+                                            </tr>
+                                            <tr>
+                                                <th><i class="fa fa-dot-circle-o pending"></i> Deal number 126515</th>
+                                                <td>20.25AM</td>
+                                                <td><span class="status-pending">pending</span></td>
+                                            </tr>
+                                            <tr>
+                                                <th><i class="fa fa-dot-circle-o cancelled"></i> Deal number 159034</th>
+                                                <td>21.24AM</td>
+                                                <td><span class="status-cancelled">cancelled</span></td>
+                                            </tr>
+                                            <tr>
+                                                <th><i class="fa fa-dot-circle-o complete"></i> Deal number 136563</th>
+                                                <td>21.50AM</td>
+                                                <td><span class="status-complete">complete</span></td>
+                                            </tr>
+                                            <tr>
+                                                <th><i class="fa fa-dot-circle-o complete"></i> Deal number 177384</th>
+                                                <td>21.59PM</td>
+                                                <td><span class="status-complete">complete</span></td>
+                                            </tr>
+                                            <tr>
+                                                <th><i class="fa fa-dot-circle-o cancelled"></i> Deal number 173434</th>
+                                                <td>22.11PM</td>
+                                                <td><span class="status-cancelled">cancelled</span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div class="clearfix"></div>
+
+
+            <!-- MAIN CONTENT AREA ENDS -->
+        </div>
+    </section>
+    <!-- END CONTENT -->
