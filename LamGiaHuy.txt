@@ -1,0 +1,5 @@
+git branch: để xem mình đang ở nhánh nào 
+
+git branch tên branch: tạo 1 nhánh mới từ 1 branch nào đó
+
+git checkout tên branch: di chuyển sang 1 nhánh nào đó  
