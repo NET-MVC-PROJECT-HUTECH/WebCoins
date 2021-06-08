@@ -47,10 +47,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
@@ -208,31 +208,22 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AspNetUser.cs">
-      <DependentUpon>egvietnam_db.tt</DependentUpon>
+      <DependentUpon>WebMainModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\AspNetUserClaim.cs">
-      <DependentUpon>egvietnam_db.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\AspNetUserLogin.cs">
-      <DependentUpon>egvietnam_db.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\AspNetUserRole.cs">
-      <DependentUpon>egvietnam_db.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\egvietnam_db.Context.cs">
+    <Compile Include="Models\WebMainModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>egvietnam_db.Context.tt</DependentUpon>
+      <DependentUpon>WebMainModel.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\egvietnam_db.cs">
+    <Compile Include="Models\WebMainModel.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>egvietnam_db.tt</DependentUpon>
+      <DependentUpon>WebMainModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\egvietnam_db.Designer.cs">
+    <Compile Include="Models\WebMainModel.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>egvietnam_db.edmx</DependentUpon>
+      <DependentUpon>WebMainModel.edmx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -476,27 +467,27 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="Models\egvietnam_db.Context.tt">
+    <Content Include="Models\WebMainModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>egvietnam_db.edmx</DependentUpon>
-      <LastGenOutput>egvietnam_db.Context.cs</LastGenOutput>
+      <DependentUpon>WebMainModel.edmx</DependentUpon>
+      <LastGenOutput>WebMainModel.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Models\egvietnam_db.tt">
+    <Content Include="Models\WebMainModel.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>egvietnam_db.edmx</DependentUpon>
-      <LastGenOutput>egvietnam_db.cs</LastGenOutput>
+      <DependentUpon>WebMainModel.edmx</DependentUpon>
+      <LastGenOutput>WebMainModel.cs</LastGenOutput>
     </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Content\assets\fonts\webfont\cryptocoins.ttf" />
     <Content Include="Content\assets\fonts\webfont\cryptocoins.woff" />
     <Content Include="Content\assets\fonts\webfont\cryptocoins.woff2" />
-    <EntityDeploy Include="Models\egvietnam_db.edmx">
+    <EntityDeploy Include="Models\WebMainModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>egvietnam_db.Designer.cs</LastGenOutput>
+      <LastGenOutput>WebMainModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="Models\egvietnam_db.edmx.diagram">
-      <DependentUpon>egvietnam_db.edmx</DependentUpon>
+    <Content Include="Models\WebMainModel.edmx.diagram">
+      <DependentUpon>WebMainModel.edmx</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
@@ -537,7 +528,6 @@
     <Content Include="Views\MyWallet\Index.cshtml" />
     <Content Include="Views\Security\Index.cshtml" />
     <Content Include="Views\Settings\GenaralSettings.cshtml" />
-    <Content Include="Views\UILogin\Register.cshtml" />
     <Content Include="Views\NotFound\Index.cshtml" />
     <Content Include="Views\Faq\Index.cshtml" />
     <Content Include="Views\HelpCenter\Index.cshtml" />
@@ -603,6 +593,7 @@
     <Content Include="Views\MailView\Important.cshtml" />
     <Content Include="Views\MailView\Trash.cshtml" />
     <Content Include="Views\LandingPage\Index.cshtml" />
+    <Content Include="Views\UILogin\Register.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
