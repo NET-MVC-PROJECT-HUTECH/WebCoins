@@ -18,6 +18,6 @@ namespace WebMain.Models
         public string RoleId { get; set; }
         public System.DateTime DateCreated { get; set; }
     
-        public virtual AspNetUser AspNetUser { get; set; }
+        public virtual AspNetRole AspNetRole { get; set; }
     }
 }

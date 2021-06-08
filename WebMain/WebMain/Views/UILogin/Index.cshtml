@@ -39,6 +39,7 @@
     <link href="~/Content/assets/fonts/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css" />
     <link href="~/Content/assets/css/animate.min.css" rel="stylesheet" type="text/css" />
     <link href="~/Content/assets/plugins/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" type="text/css" />
+
     <!-- CORE CSS FRAMEWORK - END -->
     <!-- HEADER SCRIPTS INCLUDED ON THIS PAGE - START -->
     <!-- HEADER SCRIPTS INCLUDED ON THIS PAGE - END -->
@@ -52,50 +53,62 @@
 <!-- BEGIN BODY -->
 
 <body class=" login_page">
-
-    <div class="container-fluid">
-        <div class="login-wrapper row">
-            <div id="login" class="login loginpage col-lg-offset-4 col-md-offset-3 col-sm-offset-3 col-xs-offset-0 col-xs-12 col-sm-6 col-lg-4" style="margin-top: -22.5px;">
-                <div class="login-form-header">
-                    <img src="~/Content/data/icons/padlock.png" alt="login-icon" style="max-width:64px">
-                    <div class="login-header">
-                        <h4 class="bold color-white">Login Now!</h4>
-                        <h4><small>Please enter your credentials to login.</small></h4>
-                    </div>
+    @using (Html.BeginForm())
+    {
+<div class="container-fluid">
+    <div class="login-wrapper row">
+        <div id="login" class="login loginpage col-lg-offset-4 col-md-offset-3 col-sm-offset-3 col-xs-offset-0 col-xs-12 col-sm-6 col-lg-4">
+            <div class="login-form-header">
+                <img src="~/Content/data/icons/padlock.png" alt="login-icon" style="max-width:64px">
+                <div class="login-header">
+                    <h4 class="bold color-white">Login Now!</h4>
+                    <h4><small>Please enter your credentials to login.</small></h4>
                 </div>
-                <div class="box login">
-                    <div class="content-body" style="padding-top:30px">
-                        <form id="msg_validate" action="#" novalidate="novalidate" class="no-mb no-mt">
-                            <div class="row">
-                                <div class="col-xs-12">
-                                    <div class="form-group">
-                                        <label class="form-label">Email</label>
-                                        <div class="controls">
-                                            <input type="text" class="form-control" name="formfield2" placeholder="email">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="form-label">Password</label>
-                                        <div class="controls">
-                                            <input type="text" class="form-control" name="formfield1" placeholder="password">
-                                        </div>
-                                    </div>
-                                    <div class="pull-left">
-                                        <a href="~/Dashboard/Indexdashboard" class="btn btn-primary mt-10 btn-corner right-15">Log in</a>
-                                        <a href="~/UILogin/Register" class="btn mt-10 btn-corner signup">Sign up</a>
-                                    </div>
+            </div>
+
+            <div class="box login">
+
+                <div class="content-body" style="padding-top:30px">
+
+
+                    <div class="row">
+                        <div class="col-xs-12">
+
+                            <div class="form-group">
+                                <label class="form-label">Email</label>
+                                <div class="controls">
+                                    <input type="text" required class="form-control" name="email" placeholder="email">
                                 </div>
                             </div>
-                        </form>
+
+                            <div class="form-group">
+                                <label class="form-label">Password</label>
+                                <div class="controls">
+                                    <input type="password" required class="form-control" name="password" placeholder="password">
+                                </div>
+                            </div>
+
+                            <div class="pull-left">
+                                <button type="submit" class="btn mt-10 btn-corner login">Login</button>
+                                <a href="ui-register.html" class="btn mt-10 btn-corner signup">Sign up</a>
+                            </div>
+
+                        </div>
                     </div>
+                    @Html.Raw(ViewBag.Error)
                 </div>
-                <p id="nav">
-                    <a class="pull-left" href="#" title="Password Lost and Found">Forgot password?</a>
-                    <a class="pull-right" href="~/UILogin/Register" title="Sign Up">Sign Up</a>
-                </p>
             </div>
+
+            <p id="nav">
+                <a class="pull-left" href="#" title="Password Lost and Found">Forgot password?</a>
+                <a class="pull-right" href="ui-register.html" title="Sign Up">Sign Up</a>
+            </p>
+
         </div>
     </div>
+</div>
+}
+    }
 
     <!-- MAIN CONTENT AREA ENDS -->
     <!-- LOAD FILES AT PAGE END FOR FASTER LOADING -->
