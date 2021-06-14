@@ -607,6 +607,7 @@
     <Content Include="Views\MailView\Important.cshtml" />
     <Content Include="Views\MailView\Trash.cshtml" />
     <Content Include="Views\LandingPage\Index.cshtml" />
+    <Content Include="Views\UILogin\Register2.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

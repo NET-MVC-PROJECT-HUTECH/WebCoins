@@ -1,1 +1,2 @@
 Code đăng nhập chưa hoàn thiện, đã sử dụng mã hóa password và kiểm tra tài khoản mật khẩu
+Code đăng ký nhưng nó hơi ngu xíu :v

@@ -19,6 +19,7 @@ namespace WebMain.Controllers
             ViewBag.Error = "";
             return View();
         }
+
         
         [HttpPost]
 
@@ -52,6 +53,53 @@ namespace WebMain.Controllers
 
         public ActionResult Register()
         {
+            ViewBag.Error = "";
+            return View();
+        }
+        [HttpPost]
+        public ActionResult Register(FormCollection field)
+        {
+            string sterror = "";
+            string user = field["user"];
+            string email = field["email"];
+            string password = field["password"];
+            string passwordre = field["passwordre"];
+            string passEncode = MD5Hash(Base64Encode(password));
+
+            var check = db.AspNetUsers.FirstOrDefault(s => s.Email == email);
+            if(password != passwordre)
+            {
+                sterror = "Mật khẩu không trùng khớp";
+            }
+            else
+            {
+                if (check == null)
+                {
+                    var _user = new AspNetUser()
+                    {
+                        Id = Guid.NewGuid().ToString(),
+                        Email = email,
+                        EmailConfirmed = true,
+                        PasswordHash = passEncode,
+                        PhoneNumberConfirmed = false,
+                        TwoFactorEnabled = false,
+                        LockoutEnabled = true
+                    ,
+                        AccessFailedCount = 0,
+                        UserName = user
+                    };
+                    db.AspNetUsers.Add(_user);
+                    db.SaveChanges();
+                    return RedirectToAction("Index", "UILogin");
+                }
+                else
+                {
+                    ViewBag.error = "Email already exists";
+                    return View();
+                }
+            }
+
+            ViewBag.Error = "<span class='text-danger'>" + sterror + "</span>";
             return View();
         }
 
